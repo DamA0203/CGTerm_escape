@@ -4,6 +4,7 @@ Term Project - Room Escape Game
 
 
 
+
 Member
 
 2013210036 Eungyeol Kang
@@ -12,9 +13,11 @@ Member
 
 
 
+
 Subject
 
 Implementation the 3D room escape game for Android flatform using Unity engine
+
 
 
 
