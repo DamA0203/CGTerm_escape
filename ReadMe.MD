@@ -23,12 +23,12 @@ Implementation the 3D room escape game for Android flatform using Unity engine
 
 Role
 
-Game Scenario: both
+Game Scenario: Eungyoel & Haeun
 
-Data Collection: An
+Data Collection: Haeun
 
-UI Design & Implementation: Kang
+UI Design & Implementation: Eungyeol
 
-Implementation room: An
+Implementation room: Haeun
 
-Addition script: Kang
+Addition script: Eungyeol
