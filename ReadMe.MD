@@ -1,19 +1,19 @@
 Term Project Proposal
 
 
-1. Member
+1) Member
 
 2013210036 Eungyeol Kang
 
 2013210057 Haeun An
 
 
-2. Subject
+2) Subject
 
 Implementation the 3D room escape game for Android flatform using Unity engine
 
 
-3. Subject Selection Reasons
+3) Subject Selection Reasons
 
 (1) Camera Space change according to the gaze in fixed World Space
 
@@ -24,7 +24,7 @@ Implementation the 3D room escape game for Android flatform using Unity engine
 (4) Interest in room escape game
 
 
-4. Implementation Plan
+4) Implementation Plan
 
 (1) Room which is the background of game
 
@@ -37,7 +37,7 @@ Implementation the 3D room escape game for Android flatform using Unity engine
 (5) not implement player's image and shadow
 
 
-5. Role
+5_ Role
 
 Game Scenario: Eungyoel & Haeun
 
