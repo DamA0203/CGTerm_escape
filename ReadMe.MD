@@ -37,7 +37,7 @@ Implementation the 3D room escape game for Android flatform using Unity engine
 (5) not implement player's image and shadow
 
 
-5_ Role
+5) Role
 
 Game Scenario: Eungyoel & Haeun
 
