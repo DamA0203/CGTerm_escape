@@ -1,4 +1,10 @@
-Term Project Proposal
+¡Ø This document contains <Project Proposal> and <Update Log>
+
+
+==================================================
+
+
+<Term Project Proposal>
 
 
 1) Member
@@ -48,3 +54,14 @@ UI Design & Implementation: Eungyeol
 Implementation room: Haeun
 
 Addition script: Eungyeol
+
+
+==================================================
+
+
+<Update Log>
+
+
+2016.05.17
+
+Unity Project "UnityTest" for Unity test
