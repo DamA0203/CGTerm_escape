@@ -1,10 +1,10 @@
-¡Ø This document contains <Project Proposal> and <Update Log>
+This document contains "Project Proposal" and "Update Log."
 
 
 ==================================================
 
 
-<Term Project Proposal>
+Term Project Proposal
 
 
 1) Member
@@ -59,7 +59,7 @@ Addition script: Eungyeol
 ==================================================
 
 
-<Update Log>
+Update Log
 
 
 2016.05.17
