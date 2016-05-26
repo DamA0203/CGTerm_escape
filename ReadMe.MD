@@ -1,67 +1,59 @@
-This document contains "Project Proposal" and "Update Log."
+_This document contains `Project Proposal` and `Update Log.`_
 
 
-==================================================
+<br><br>
 
 
-Term Project Proposal
+# Term Project Proposal
 
 
-1) Member
+##### Member
 
-2013210036 Eungyeol Kang
+* 2013210036 Eungyeol Kang
+* 2013210057 Haeun An
 
-2013210057 Haeun An
 
-
-2) Subject
+##### Subject
 
 Implementation the 3D room escape game for Android flatform using Unity engine
 
 
-3) Subject Selection Reasons
+##### Subject Selection Reasons
 
-(1) Camera Space change according to the gaze in fixed World Space
-
-(2) Rotation of a object in Object Space
-
-(3) Shadow change according to moving object
-
-(4) Interest in room escape game
+* Camera Space change according to screen touch
+* Rotation of a object in Object Space
+* Shadow change according to moving object
+* Interest in room escape game
 
 
-4) Implementation Plan
+##### Implementation Plan
 
-(1) Room which is the background of game
-
-(2) Object that make up the room: fixed object & relocatable 
-
-(3) Shadow
-
-(4) Rotation of a object in item inventory
-
-(5) not implement player's image and shadow
+* Room which is the background of game
+* Object that make up the room: fixed object & relocatable
+* Camera rotation
+* Camera zoom in/out
+* Object rotation in item inventory
+* Not implement player's image and shadow
 
 
-5) Role
+##### Role
 
-Game Scenario: Eungyoel & Haeun
-
-Data Collection: Haeun
-
-UI Design & Implementation: Eungyeol
-
-Implementation room: Haeun
-
-Addition script: Eungyeol
+* Game Scenario: Eungyoel & Haeun
+* Data Collection: Haeun
+* UI Design & Implementation: Eungyeol
+* Implementation room: Haeun
+* Addition script: Eungyeol
 
 
-==================================================
+<br><br>
 
 
-Update Log
+# Update Log
+
+> 2016.05.26
+> Camera rotation & zoom in/out test in the project "UnityTest"
+> Scene change test
 
 
-2016.05.17
-
-Unity Project "UnityTest" for Unity test
+> 2016.05.17
+> Create unity project "UnityTest" for unity test
