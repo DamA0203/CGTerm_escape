@@ -52,15 +52,12 @@ Implementation the 3D room escape game for Android flatform using Unity engine
 
 > 2016.05.26
 
+> * Camera rotation & zoom in/out test in the project "UnityTest"
 
-> Camera rotation & zoom in/out test in the project "UnityTest"
-
-
-> Scene change test
+> * Scene change test
 
 <br>
 
 > 2016.05.17
 
-
-> Create unity project "UnityTest" for unity test
+> * Create unity project "UnityTest" for unity test
