@@ -15,7 +15,7 @@ _This document contains `Project Proposal` and `Update Log.`_
 
 ##### Subject
 
-* Implementation the 3D room escape game for Android flatform using Unity engine
+* Implementation the 3D room escape game for Android platform using Unity engine
 
 
 ##### Subject Selection Reasons
