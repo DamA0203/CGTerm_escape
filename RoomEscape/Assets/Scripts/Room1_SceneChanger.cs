@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class Room1_SceneChanger : MonoBehaviour {
-
     public GameObject box;
     public GameObject yesButton;
     public GameObject noButton;
@@ -21,7 +20,7 @@ public class Room1_SceneChanger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //exit game
+        //Notification window about exit game
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!boxOnCheck)

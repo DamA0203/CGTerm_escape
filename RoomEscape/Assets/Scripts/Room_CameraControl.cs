@@ -4,19 +4,20 @@ using System.Collections;
 public class Room_CameraControl : MonoBehaviour {
     GameObject cameraParent;
 
+    public GameObject box;
+
     Vector3 defaultPosition;
     Quaternion defaultRotation;
     float defaultZoom;
+
+    float movePosX, prePosX;
+    Vector3 prePos_zoom;
 
     bool zoomInState;
     bool touchState;
 
     float halfWidth;
     float halfHeight;
-
-    float movePosX, prePosX;
-
-    Vector3 prePos_zoom;
 
     // Use this for initialization
     void Start () {
@@ -37,21 +38,19 @@ public class Room_CameraControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.touchCount > 0)   //touch occur
+        //touch occur
+        if (Input.touchCount > 0 && !box.activeSelf)
         {
             //get touch coordinate
             float touchX = Input.GetTouch(0).position.x;
             float posX = touchX - halfWidth - transform.localPosition.x;
 
-            //start touch
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
                 Debug.Log("Touch begin.");
                 prePosX = touchX;
                 touchState = true;
             }
-
-            //moving touch point => camera rotation
             else if (Input.GetTouch(0).phase == TouchPhase.Moved)
             {
                 Debug.Log("Touch slide. Rotate camera.");
@@ -60,8 +59,6 @@ public class Room_CameraControl : MonoBehaviour {
                 prePosX = touchX;
                 touchState = false;
             }
-
-            //end touch
             else if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
                 Debug.Log("Touch end.");
@@ -76,8 +73,6 @@ public class Room_CameraControl : MonoBehaviour {
                     zoomInState = true;
                     touchState = false;
                 }
-
-                //zoom out
                 else if (touchState && zoomInState)
                 {
                     Debug.Log("Zoom out camera.");
