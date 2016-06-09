@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Help_SceneChanger.cs" />
     <Compile Include="Assets\Scripts\Room1_SceneChanger.cs" />
     <Compile Include="Assets\Scripts\Room_CameraControl.cs" />
     <Compile Include="Assets\Scripts\Title_SceneChanger.cs" />

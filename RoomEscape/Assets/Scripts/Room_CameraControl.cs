@@ -46,6 +46,7 @@ public class Room_CameraControl : MonoBehaviour {
             //start touch
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
+                Debug.Log("Touch begin.");
                 prePosX = touchX;
                 touchState = true;
             }
@@ -53,6 +54,7 @@ public class Room_CameraControl : MonoBehaviour {
             //moving touch point => camera rotation
             else if (Input.GetTouch(0).phase == TouchPhase.Moved)
             {
+                Debug.Log("Touch slide. Rotate camera.");
                 movePosX = prePosX - touchX;
                 cameraParent.transform.Rotate(0, movePosX * Time.deltaTime, 0);
                 prePosX = touchX;
@@ -62,9 +64,11 @@ public class Room_CameraControl : MonoBehaviour {
             //end touch
             else if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
+                Debug.Log("Touch end.");
                 //zoom in
                 if (touchState && !zoomInState)
                 {
+                    Debug.Log("Zoom in camera.");
                     prePos_zoom = Camera.main.transform.position;
                     Camera.main.transform.Translate(posX * Time.deltaTime * 0.2f, 0, 0);
                     Camera.main.fieldOfView = Camera.main.fieldOfView * 0.5f;
@@ -76,6 +80,7 @@ public class Room_CameraControl : MonoBehaviour {
                 //zoom out
                 else if (touchState && zoomInState)
                 {
+                    Debug.Log("Zoom out camera.");
                     Camera.main.transform.position = prePos_zoom;
                     Camera.main.fieldOfView = defaultZoom;
 
