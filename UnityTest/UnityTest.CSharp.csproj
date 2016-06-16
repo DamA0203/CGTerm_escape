@@ -64,8 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Clock\Scripts\Clock.cs" />
-    <Compile Include="Assets\Script\CameraControl.cs" />
-    <Compile Include="Assets\Script\SceneChanger.cs" />
+    <Compile Include="Assets\Scripts\Test01_CameraControl.cs" />
+    <Compile Include="Assets\Scripts\Test01_SceneChanger.cs" />
+    <Compile Include="Assets\Scripts\Title_SceneChanger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\City Props Pack\Readme.txt" />
