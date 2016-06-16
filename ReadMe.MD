@@ -50,6 +50,13 @@ _This document contains `Project Proposal` and `Update Log.`_
 
 # Update Log
 
+##### 2016.06.16
+
+* Camera zoom out method change and test
+* Add application icon
+* Slightly better UI
+
+
 ##### 2016.06.09
 
 * Notification window test
@@ -57,6 +64,7 @@ _This document contains `Project Proposal` and `Update Log.`_
   * http://www.freesound.org/people/Robinhood76/sounds/347373/
   * Attribution Noncommercial License.
 * Check resolution
+
 
 ##### 2016.05.31
 
