@@ -70,7 +70,7 @@ public class Title_SceneChanger : MonoBehaviour {
     public void StartButton()
     {
         Debug.Log("Start button. Move to game.");
-        SceneManager.LoadScene("test01");
+        SceneManager.LoadScene("room_1");
     }
 
     public void HelpButton()
