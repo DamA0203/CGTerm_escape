@@ -50,6 +50,10 @@ _This document contains `Project Proposal` and `Update Log.`_
 
 # Update Log
 
+##### 2016.06.21
+
+* Object touch test using Ray
+
 ##### 2016.06.16
 
 * Camera zoom out method change and test
