@@ -1,0 +1,998 @@
+fileFormatVersion: 2
+guid: a0bf1e1e58b92f540a108ec7261970a3
+timeCreated: 1466491510
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: book
+    100002: book 1
+    100004: book_1
+    100006: book_1 1
+    100008: book_2
+    100010: book_2 1
+    100012: book_3
+    100014: book_3 1
+    100016: book_4
+    100018: book_4 1
+    100020: book_5
+    100022: book_5 1
+    100024: book_6
+    100026: book_6 1
+    100028: book_7
+    100030: book_7 1
+    100032: //RootNode
+    100034: group_0
+    100036: group_1
+    100038: group_10
+    100040: group_10 1
+    100042: group_11
+    100044: group_11 1
+    100046: group_12
+    100048: group_13
+    100050: group_14
+    100052: group_15
+    100054: group_16
+    100056: group_17
+    100058: group_18
+    100060: group_19
+    100062: group_19 1
+    100064: group_19 2
+    100066: group_2
+    100068: group_20
+    100070: group_20 1
+    100072: group_20 2
+    100074: group_21
+    100076: group_21 1
+    100078: group_21 2
+    100080: group_22
+    100082: group_23
+    100084: group_24
+    100086: group_25
+    100088: group_26
+    100090: group_27
+    100092: group_28
+    100094: group_29
+    100096: group_3
+    100098: group_30
+    100100: group_31
+    100102: group_32
+    100104: group_33
+    100106: group_34
+    100108: group_35
+    100110: group_36
+    100112: group_37
+    100114: group_38
+    100116: group_39
+    100118: group_4
+    100120: group_40
+    100122: group_41
+    100124: group_42
+    100126: group_43
+    100128: group_44
+    100130: group_45
+    100132: group_46
+    100134: group_47
+    100136: group_48
+    100138: group_49
+    100140: group_5
+    100142: group_50
+    100144: group_51
+    100146: group_52
+    100148: group_53
+    100150: group_54
+    100152: group_55
+    100154: group_56
+    100156: group_57
+    100158: group_58
+    100160: group_59
+    100162: group_6
+    100164: group_60
+    100166: group_61
+    100168: group_62
+    100170: group_63
+    100172: group_64
+    100174: group_65
+    100176: group_66
+    100178: group_67
+    100180: group_68
+    100182: group_69
+    100184: group_7
+    100186: group_70
+    100188: group_70 1
+    100190: group_71
+    100192: group_72
+    100194: group_72 1
+    100196: group_73
+    100198: group_73 1
+    100200: group_74
+    100202: group_75
+    100204: group_76
+    100206: group_77
+    100208: group_78
+    100210: group_79
+    100212: group_8
+    100214: group_80
+    100216: group_81
+    100218: group_82
+    100220: group_83
+    100222: group_84
+    100224: group_85
+    100226: group_86
+    100228: group_87
+    100230: group_88
+    100232: group_9
+    100234: ID1039
+    100236: ID1045
+    100238: ID1051
+    100240: ID107
+    100242: ID1084
+    100244: ID1090
+    100246: ID1096
+    100248: ID1102
+    100250: ID1116
+    100252: ID1122
+    100254: ID1128
+    100256: ID113
+    100258: ID1142
+    100260: ID1148
+    100262: ID1154
+    100264: ID1168
+    100266: ID1174
+    100268: ID1190
+    100270: ID1208
+    100272: ID1224
+    100274: ID1230
+    100276: ID1236
+    100278: ID1250
+    100280: ID136
+    100282: ID15
+    100284: ID164
+    100286: ID185
+    100288: ID191
+    100290: ID197
+    100292: ID21
+    100294: ID213
+    100296: ID27
+    100298: ID304
+    100300: ID312
+    100302: ID318
+    100304: ID322
+    100306: ID326
+    100308: ID33
+    100310: ID358
+    100312: ID366
+    100314: ID370
+    100316: ID374
+    100318: ID378
+    100320: ID49
+    100322: ID57
+    100324: ID63
+    100326: ID630
+    100328: ID636
+    100330: ID642
+    100332: ID657
+    100334: ID663
+    100336: ID669
+    100338: ID684
+    100340: ID690
+    100342: ID696
+    100344: ID711
+    100346: ID717
+    100348: ID723
+    100350: ID748
+    100352: ID756
+    100354: ID762
+    100356: ID768
+    100358: ID776
+    100360: ID782
+    100362: ID79
+    100364: ID85
+    100366: ID874
+    100368: ID91
+    100370: ID996
+    100372: instance_0
+    100374: instance_0 1
+    100376: instance_1
+    100378: instance_1 1
+    100380: instance_10
+    100382: instance_11
+    100384: instance_11 1
+    100386: instance_11 2
+    100388: instance_12
+    100390: instance_13
+    100392: instance_14
+    100394: instance_15
+    100396: instance_16
+    100398: instance_17
+    100400: instance_17 1
+    100402: instance_18
+    100404: instance_18 1
+    100406: instance_19
+    100408: instance_2
+    100410: instance_2 1
+    100412: instance_20
+    100414: instance_3
+    100416: instance_3 1
+    100418: instance_4
+    100420: instance_4 1
+    100422: instance_5
+    100424: instance_5 1
+    100426: instance_6
+    100428: instance_6 1
+    100430: instance_7
+    100432: instance_7 1
+    100434: instance_8
+    100436: instance_9
+    100438: Pokojik
+    100440: "\xDAchytka-techno"
+    100442: "\xDAchytka-techno 1"
+    100444: "\xDAchytka-techno 10"
+    100446: "\xDAchytka-techno 11"
+    100448: "\xDAchytka-techno 12"
+    100450: "\xDAchytka-techno 13"
+    100452: "\xDAchytka-techno 14"
+    100454: "\xDAchytka-techno 15"
+    100456: "\xDAchytka-techno 2"
+    100458: "\xDAchytka-techno 3"
+    100460: "\xDAchytka-techno 4"
+    100462: "\xDAchytka-techno 5"
+    100464: "\xDAchytka-techno 6"
+    100466: "\xDAchytka-techno 7"
+    100468: "\xDAchytka-techno 8"
+    100470: "\xDAchytka-techno 9"
+    400000: book
+    400002: book 1
+    400004: book_1
+    400006: book_1 1
+    400008: book_2
+    400010: book_2 1
+    400012: book_3
+    400014: book_3 1
+    400016: book_4
+    400018: book_4 1
+    400020: book_5
+    400022: book_5 1
+    400024: book_6
+    400026: book_6 1
+    400028: book_7
+    400030: book_7 1
+    400032: //RootNode
+    400034: group_0
+    400036: group_1
+    400038: group_10
+    400040: group_10 1
+    400042: group_11
+    400044: group_11 1
+    400046: group_12
+    400048: group_13
+    400050: group_14
+    400052: group_15
+    400054: group_16
+    400056: group_17
+    400058: group_18
+    400060: group_19
+    400062: group_19 1
+    400064: group_19 2
+    400066: group_2
+    400068: group_20
+    400070: group_20 1
+    400072: group_20 2
+    400074: group_21
+    400076: group_21 1
+    400078: group_21 2
+    400080: group_22
+    400082: group_23
+    400084: group_24
+    400086: group_25
+    400088: group_26
+    400090: group_27
+    400092: group_28
+    400094: group_29
+    400096: group_3
+    400098: group_30
+    400100: group_31
+    400102: group_32
+    400104: group_33
+    400106: group_34
+    400108: group_35
+    400110: group_36
+    400112: group_37
+    400114: group_38
+    400116: group_39
+    400118: group_4
+    400120: group_40
+    400122: group_41
+    400124: group_42
+    400126: group_43
+    400128: group_44
+    400130: group_45
+    400132: group_46
+    400134: group_47
+    400136: group_48
+    400138: group_49
+    400140: group_5
+    400142: group_50
+    400144: group_51
+    400146: group_52
+    400148: group_53
+    400150: group_54
+    400152: group_55
+    400154: group_56
+    400156: group_57
+    400158: group_58
+    400160: group_59
+    400162: group_6
+    400164: group_60
+    400166: group_61
+    400168: group_62
+    400170: group_63
+    400172: group_64
+    400174: group_65
+    400176: group_66
+    400178: group_67
+    400180: group_68
+    400182: group_69
+    400184: group_7
+    400186: group_70
+    400188: group_70 1
+    400190: group_71
+    400192: group_72
+    400194: group_72 1
+    400196: group_73
+    400198: group_73 1
+    400200: group_74
+    400202: group_75
+    400204: group_76
+    400206: group_77
+    400208: group_78
+    400210: group_79
+    400212: group_8
+    400214: group_80
+    400216: group_81
+    400218: group_82
+    400220: group_83
+    400222: group_84
+    400224: group_85
+    400226: group_86
+    400228: group_87
+    400230: group_88
+    400232: group_9
+    400234: ID1039
+    400236: ID1045
+    400238: ID1051
+    400240: ID107
+    400242: ID1084
+    400244: ID1090
+    400246: ID1096
+    400248: ID1102
+    400250: ID1116
+    400252: ID1122
+    400254: ID1128
+    400256: ID113
+    400258: ID1142
+    400260: ID1148
+    400262: ID1154
+    400264: ID1168
+    400266: ID1174
+    400268: ID1190
+    400270: ID1208
+    400272: ID1224
+    400274: ID1230
+    400276: ID1236
+    400278: ID1250
+    400280: ID136
+    400282: ID15
+    400284: ID164
+    400286: ID185
+    400288: ID191
+    400290: ID197
+    400292: ID21
+    400294: ID213
+    400296: ID27
+    400298: ID304
+    400300: ID312
+    400302: ID318
+    400304: ID322
+    400306: ID326
+    400308: ID33
+    400310: ID358
+    400312: ID366
+    400314: ID370
+    400316: ID374
+    400318: ID378
+    400320: ID49
+    400322: ID57
+    400324: ID63
+    400326: ID630
+    400328: ID636
+    400330: ID642
+    400332: ID657
+    400334: ID663
+    400336: ID669
+    400338: ID684
+    400340: ID690
+    400342: ID696
+    400344: ID711
+    400346: ID717
+    400348: ID723
+    400350: ID748
+    400352: ID756
+    400354: ID762
+    400356: ID768
+    400358: ID776
+    400360: ID782
+    400362: ID79
+    400364: ID85
+    400366: ID874
+    400368: ID91
+    400370: ID996
+    400372: instance_0
+    400374: instance_0 1
+    400376: instance_1
+    400378: instance_1 1
+    400380: instance_10
+    400382: instance_11
+    400384: instance_11 1
+    400386: instance_11 2
+    400388: instance_12
+    400390: instance_13
+    400392: instance_14
+    400394: instance_15
+    400396: instance_16
+    400398: instance_17
+    400400: instance_17 1
+    400402: instance_18
+    400404: instance_18 1
+    400406: instance_19
+    400408: instance_2
+    400410: instance_2 1
+    400412: instance_20
+    400414: instance_3
+    400416: instance_3 1
+    400418: instance_4
+    400420: instance_4 1
+    400422: instance_5
+    400424: instance_5 1
+    400426: instance_6
+    400428: instance_6 1
+    400430: instance_7
+    400432: instance_7 1
+    400434: instance_8
+    400436: instance_9
+    400438: Pokojik
+    400440: "\xDAchytka-techno"
+    400442: "\xDAchytka-techno 1"
+    400444: "\xDAchytka-techno 10"
+    400446: "\xDAchytka-techno 11"
+    400448: "\xDAchytka-techno 12"
+    400450: "\xDAchytka-techno 13"
+    400452: "\xDAchytka-techno 14"
+    400454: "\xDAchytka-techno 15"
+    400456: "\xDAchytka-techno 2"
+    400458: "\xDAchytka-techno 3"
+    400460: "\xDAchytka-techno 4"
+    400462: "\xDAchytka-techno 5"
+    400464: "\xDAchytka-techno 6"
+    400466: "\xDAchytka-techno 7"
+    400468: "\xDAchytka-techno 8"
+    400470: "\xDAchytka-techno 9"
+    2300000: book
+    2300002: book 1
+    2300004: book_1
+    2300006: book_1 1
+    2300008: book_2
+    2300010: book_2 1
+    2300012: book_3
+    2300014: book_3 1
+    2300016: book_4
+    2300018: book_4 1
+    2300020: book_5
+    2300022: book_5 1
+    2300024: book_6
+    2300026: book_6 1
+    2300028: book_7
+    2300030: book_7 1
+    2300032: group_10
+    2300034: group_10 1
+    2300036: group_11
+    2300038: group_11 1
+    2300040: group_14
+    2300042: group_15
+    2300044: group_17
+    2300046: group_2
+    2300048: group_20
+    2300050: group_20 1
+    2300052: group_20 2
+    2300054: group_21
+    2300056: group_21 1
+    2300058: group_21 2
+    2300060: group_25
+    2300062: group_26
+    2300064: group_29
+    2300066: group_3
+    2300068: group_30
+    2300070: group_31
+    2300072: group_32
+    2300074: group_33
+    2300076: group_36
+    2300078: group_37
+    2300080: group_38
+    2300082: group_39
+    2300084: group_4
+    2300086: group_40
+    2300088: group_42
+    2300090: group_44
+    2300092: group_45
+    2300094: group_46
+    2300096: group_47
+    2300098: group_48
+    2300100: group_5
+    2300102: group_50
+    2300104: group_51
+    2300106: group_52
+    2300108: group_54
+    2300110: group_56
+    2300112: group_58
+    2300114: group_59
+    2300116: group_6
+    2300118: group_60
+    2300120: group_61
+    2300122: group_62
+    2300124: group_64
+    2300126: group_65
+    2300128: group_66
+    2300130: group_68
+    2300132: group_7
+    2300134: group_70
+    2300136: group_70 1
+    2300138: group_73
+    2300140: group_73 1
+    2300142: group_75
+    2300144: group_78
+    2300146: group_79
+    2300148: group_80
+    2300150: group_81
+    2300152: group_82
+    2300154: group_83
+    2300156: group_85
+    2300158: group_86
+    2300160: group_87
+    2300162: ID1039
+    2300164: ID1045
+    2300166: ID1051
+    2300168: ID107
+    2300170: ID1084
+    2300172: ID1090
+    2300174: ID1096
+    2300176: ID1102
+    2300178: ID1116
+    2300180: ID1122
+    2300182: ID1128
+    2300184: ID113
+    2300186: ID1142
+    2300188: ID1148
+    2300190: ID1154
+    2300192: ID1168
+    2300194: ID1174
+    2300196: ID1190
+    2300198: ID1208
+    2300200: ID1224
+    2300202: ID1230
+    2300204: ID1236
+    2300206: ID1250
+    2300208: ID136
+    2300210: ID15
+    2300212: ID164
+    2300214: ID185
+    2300216: ID191
+    2300218: ID197
+    2300220: ID21
+    2300222: ID213
+    2300224: ID27
+    2300226: ID304
+    2300228: ID33
+    2300230: ID358
+    2300232: ID49
+    2300234: ID57
+    2300236: ID63
+    2300238: ID630
+    2300240: ID636
+    2300242: ID642
+    2300244: ID657
+    2300246: ID663
+    2300248: ID669
+    2300250: ID684
+    2300252: ID690
+    2300254: ID696
+    2300256: ID711
+    2300258: ID717
+    2300260: ID723
+    2300262: ID748
+    2300264: ID756
+    2300266: ID762
+    2300268: ID768
+    2300270: ID79
+    2300272: ID85
+    2300274: ID874
+    2300276: ID91
+    2300278: ID996
+    2300280: "\xDAchytka-techno"
+    2300282: "\xDAchytka-techno 1"
+    2300284: "\xDAchytka-techno 10"
+    2300286: "\xDAchytka-techno 11"
+    2300288: "\xDAchytka-techno 12"
+    2300290: "\xDAchytka-techno 13"
+    2300292: "\xDAchytka-techno 14"
+    2300294: "\xDAchytka-techno 15"
+    2300296: "\xDAchytka-techno 2"
+    2300298: "\xDAchytka-techno 3"
+    2300300: "\xDAchytka-techno 4"
+    2300302: "\xDAchytka-techno 5"
+    2300304: "\xDAchytka-techno 6"
+    2300306: "\xDAchytka-techno 7"
+    2300308: "\xDAchytka-techno 8"
+    2300310: "\xDAchytka-techno 9"
+    3300000: book
+    3300002: book 1
+    3300004: book_1
+    3300006: book_1 1
+    3300008: book_2
+    3300010: book_2 1
+    3300012: book_3
+    3300014: book_3 1
+    3300016: book_4
+    3300018: book_4 1
+    3300020: book_5
+    3300022: book_5 1
+    3300024: book_6
+    3300026: book_6 1
+    3300028: book_7
+    3300030: book_7 1
+    3300032: group_10
+    3300034: group_10 1
+    3300036: group_11
+    3300038: group_11 1
+    3300040: group_14
+    3300042: group_15
+    3300044: group_17
+    3300046: group_2
+    3300048: group_20
+    3300050: group_20 1
+    3300052: group_20 2
+    3300054: group_21
+    3300056: group_21 1
+    3300058: group_21 2
+    3300060: group_25
+    3300062: group_26
+    3300064: group_29
+    3300066: group_3
+    3300068: group_30
+    3300070: group_31
+    3300072: group_32
+    3300074: group_33
+    3300076: group_36
+    3300078: group_37
+    3300080: group_38
+    3300082: group_39
+    3300084: group_4
+    3300086: group_40
+    3300088: group_42
+    3300090: group_44
+    3300092: group_45
+    3300094: group_46
+    3300096: group_47
+    3300098: group_48
+    3300100: group_5
+    3300102: group_50
+    3300104: group_51
+    3300106: group_52
+    3300108: group_54
+    3300110: group_56
+    3300112: group_58
+    3300114: group_59
+    3300116: group_6
+    3300118: group_60
+    3300120: group_61
+    3300122: group_62
+    3300124: group_64
+    3300126: group_65
+    3300128: group_66
+    3300130: group_68
+    3300132: group_7
+    3300134: group_70
+    3300136: group_70 1
+    3300138: group_73
+    3300140: group_73 1
+    3300142: group_75
+    3300144: group_78
+    3300146: group_79
+    3300148: group_80
+    3300150: group_81
+    3300152: group_82
+    3300154: group_83
+    3300156: group_85
+    3300158: group_86
+    3300160: group_87
+    3300162: ID1039
+    3300164: ID1045
+    3300166: ID1051
+    3300168: ID107
+    3300170: ID1084
+    3300172: ID1090
+    3300174: ID1096
+    3300176: ID1102
+    3300178: ID1116
+    3300180: ID1122
+    3300182: ID1128
+    3300184: ID113
+    3300186: ID1142
+    3300188: ID1148
+    3300190: ID1154
+    3300192: ID1168
+    3300194: ID1174
+    3300196: ID1190
+    3300198: ID1208
+    3300200: ID1224
+    3300202: ID1230
+    3300204: ID1236
+    3300206: ID1250
+    3300208: ID136
+    3300210: ID15
+    3300212: ID164
+    3300214: ID185
+    3300216: ID191
+    3300218: ID197
+    3300220: ID21
+    3300222: ID213
+    3300224: ID27
+    3300226: ID304
+    3300228: ID33
+    3300230: ID358
+    3300232: ID49
+    3300234: ID57
+    3300236: ID63
+    3300238: ID630
+    3300240: ID636
+    3300242: ID642
+    3300244: ID657
+    3300246: ID663
+    3300248: ID669
+    3300250: ID684
+    3300252: ID690
+    3300254: ID696
+    3300256: ID711
+    3300258: ID717
+    3300260: ID723
+    3300262: ID748
+    3300264: ID756
+    3300266: ID762
+    3300268: ID768
+    3300270: ID79
+    3300272: ID85
+    3300274: ID874
+    3300276: ID91
+    3300278: ID996
+    3300280: "\xDAchytka-techno"
+    3300282: "\xDAchytka-techno 1"
+    3300284: "\xDAchytka-techno 10"
+    3300286: "\xDAchytka-techno 11"
+    3300288: "\xDAchytka-techno 12"
+    3300290: "\xDAchytka-techno 13"
+    3300292: "\xDAchytka-techno 14"
+    3300294: "\xDAchytka-techno 15"
+    3300296: "\xDAchytka-techno 2"
+    3300298: "\xDAchytka-techno 3"
+    3300300: "\xDAchytka-techno 4"
+    3300302: "\xDAchytka-techno 5"
+    3300304: "\xDAchytka-techno 6"
+    3300306: "\xDAchytka-techno 7"
+    3300308: "\xDAchytka-techno 8"
+    3300310: "\xDAchytka-techno 9"
+    4300000: book_4
+    4300002: ID15
+    4300004: ID21
+    4300006: ID27
+    4300008: ID33
+    4300010: book_3
+    4300012: ID49
+    4300014: ID57
+    4300016: ID63
+    4300018: book_2
+    4300020: ID79
+    4300022: ID85
+    4300024: ID91
+    4300026: book_1
+    4300028: ID107
+    4300030: ID113
+    4300032: book_7
+    4300034: ID136
+    4300036: book_5
+    4300038: ID164
+    4300040: book
+    4300042: ID185
+    4300044: ID191
+    4300046: ID197
+    4300048: book_6
+    4300050: ID213
+    4300052: group_2
+    4300054: group_3
+    4300056: group_4
+    4300058: group_5
+    4300060: group_6
+    4300062: group_7
+    4300064: group_10
+    4300066: ID304
+    4300068: group_11
+    4300070: "\xDAchytka-techno"
+    4300072: group_10
+    4300074: ID358
+    4300076: group_11
+    4300078: "\xDAchytka-techno"
+    4300080: group_14
+    4300082: group_15
+    4300084: group_17
+    4300086: group_20
+    4300088: group_21
+    4300090: group_20
+    4300092: group_21
+    4300094: group_20
+    4300096: group_21
+    4300098: group_25
+    4300100: group_26
+    4300102: group_29
+    4300104: group_30
+    4300106: group_31
+    4300108: group_32
+    4300110: group_33
+    4300112: group_36
+    4300114: group_37
+    4300116: group_38
+    4300118: group_39
+    4300120: group_40
+    4300122: group_42
+    4300124: group_44
+    4300126: group_45
+    4300128: ID630
+    4300130: ID636
+    4300132: ID642
+    4300134: group_46
+    4300136: ID657
+    4300138: ID663
+    4300140: ID669
+    4300142: group_47
+    4300144: ID684
+    4300146: ID690
+    4300148: ID696
+    4300150: group_48
+    4300152: ID711
+    4300154: ID717
+    4300156: ID723
+    4300158: group_50
+    4300160: group_51
+    4300162: ID748
+    4300164: ID756
+    4300166: ID762
+    4300168: ID768
+    4300170: group_52
+    4300172: group_54
+    4300174: group_56
+    4300176: group_58
+    4300178: group_59
+    4300180: group_60
+    4300182: group_61
+    4300184: group_62
+    4300186: group_64
+    4300188: ID874
+    4300190: group_65
+    4300192: group_66
+    4300194: group_68
+    4300196: group_70
+    4300198: group_73
+    4300200: group_75
+    4300202: group_70
+    4300204: group_73
+    4300206: group_78
+    4300208: group_79
+    4300210: group_80
+    4300212: ID996
+    4300214: group_81
+    4300216: group_82
+    4300218: group_83
+    4300220: group_85
+    4300222: ID1039
+    4300224: ID1045
+    4300226: ID1051
+    4300228: group_86
+    4300230: group_87
+    4300232: book_4
+    4300234: ID1084
+    4300236: ID1090
+    4300238: ID1096
+    4300240: ID1102
+    4300242: book_3
+    4300244: ID1116
+    4300246: ID1122
+    4300248: ID1128
+    4300250: book_2
+    4300252: ID1142
+    4300254: ID1148
+    4300256: ID1154
+    4300258: book_1
+    4300260: ID1168
+    4300262: ID1174
+    4300264: book_7
+    4300266: ID1190
+    4300268: book_5
+    4300270: ID1208
+    4300272: book
+    4300274: ID1224
+    4300276: ID1230
+    4300278: ID1236
+    4300280: book_6
+    4300282: ID1250
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

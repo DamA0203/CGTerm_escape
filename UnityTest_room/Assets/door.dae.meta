@@ -1,0 +1,955 @@
+fileFormatVersion: 2
+guid: bb16aaff56a0f494088db3d8f4b539c4
+timeCreated: 1466500145
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bell___Plymouth_Style_Door_Knob_with_key_lock__privacy_lock___non-locking_options__2.375in_throw__1.375in_Thick_Door_
+    100002: Bell_Handle_-_Inside_Assembly
+    100004: Bell_Handle_-_Outside_Assembly
+    100006: //RootNode
+    100008: Door_-_Interior_1.375in_x_78in_x_30in_Flat_Hollow_Core
+    100010: Door_-_Interior_1.375in_x_78in_x_30in_Flat_Hollow_Core_With_Hardware
+    100012: Door_Frame_-_Interior_4.5in_x_78in_x_30in_Door_With_Hardware__1.375in_Thick_Door_
+    100014: Door_Frame_-_Interior__3.5in_wall__1.375in_x_80in_x_12in_Door__With_Mortises_
+    100016: Door_Frame_-_Interior__4.5in_wall__1.375in_x_78in_x_30in_Door__With_Mortises_
+    100018: Door_Jamb_-_4.5in_x_30.5_in__30in_Door_
+    100020: Door_Jamb_-_4.5in_x_79.5_in__78in_H_x_1.375in_T_Door__Latch_Mortise_
+    100022: Door_Jamb_Stop_-_30.125in__30in_Door_
+    100024: Door_Jamb_Stop_-_78_13_16in__78in_Door_
+    100026: Door_Jamb_Stop_-_78_13_16in__78in_Door_ 1
+    100028: Door_Knob_-_Inside_Assembly
+    100030: Door_Knob_-_Outside_Assembly
+    100032: group_0
+    100034: group_0 1
+    100036: group_0 2
+    100038: Handle_-_Bell
+    100040: Handle_-_Bell 1
+    100042: Handle_Detail_-_Privacy_Lock_-_Concave
+    100044: Handle_Detail_-_Twist_Lock
+    100046: Handles_-_Inside
+    100048: Handles_-_Outside
+    100050: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Three_Tab_Side_With_Pin
+    100052: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Three_Tab_Side_With_Pin 1
+    100054: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Three_Tab_Side_With_Pin 2
+    100056: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Two_Tab_Side
+    100058: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Two_Tab_Side 1
+    100060: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Two_Tab_Side 2
+    100062: Hinge_Bottom_Cap
+    100064: Hinge_Bottom_Cap 1
+    100066: Hinge_Bottom_Cap 2
+    100068: Hinge_Pin_-_3.5in
+    100070: Hinge_Pin_-_3.5in 1
+    100072: Hinge_Pin_-_3.5in 2
+    100074: Hinge_Plate
+    100076: Hinge_Plate 1
+    100078: Hinge_Plate 2
+    100080: ID111
+    100082: ID111 1
+    100084: ID126
+    100086: ID132
+    100088: ID150
+    100090: ID165
+    100092: ID171
+    100094: ID177
+    100096: ID183
+    100098: ID189
+    100100: ID195
+    100102: ID201
+    100104: ID207
+    100106: ID219
+    100108: ID235
+    100110: ID241
+    100112: ID247
+    100114: ID253
+    100116: ID259
+    100118: ID265
+    100120: ID271
+    100122: ID275
+    100124: ID29
+    100126: ID29 1
+    100128: ID297
+    100130: ID303
+    100132: ID317
+    100134: ID317 1
+    100136: ID317 10
+    100138: ID317 11
+    100140: ID317 12
+    100142: ID317 13
+    100144: ID317 14
+    100146: ID317 15
+    100148: ID317 16
+    100150: ID317 17
+    100152: ID317 18
+    100154: ID317 19
+    100156: ID317 2
+    100158: ID317 20
+    100160: ID317 21
+    100162: ID317 3
+    100164: ID317 4
+    100166: ID317 5
+    100168: ID317 6
+    100170: ID317 7
+    100172: ID317 8
+    100174: ID317 9
+    100176: ID332
+    100178: ID338
+    100180: ID344
+    100182: ID35
+    100184: ID35 1
+    100186: ID359
+    100188: ID359 1
+    100190: ID359 2
+    100192: ID365
+    100194: ID365 1
+    100196: ID365 2
+    100198: ID371
+    100200: ID371 1
+    100202: ID371 2
+    100204: ID392
+    100206: ID398
+    100208: ID406
+    100210: ID41
+    100212: ID41 1
+    100214: ID412
+    100216: ID418
+    100218: ID424
+    100220: ID441
+    100222: ID441 1
+    100224: ID441 2
+    100226: ID447
+    100228: ID447 1
+    100230: ID447 2
+    100232: ID453
+    100234: ID453 1
+    100236: ID453 2
+    100238: ID466
+    100240: ID466 1
+    100242: ID466 2
+    100244: ID47
+    100246: ID47 1
+    100248: ID483
+    100250: ID483 1
+    100252: ID483 2
+    100254: ID499
+    100256: ID505
+    100258: ID511
+    100260: ID53
+    100262: ID53 1
+    100264: ID530
+    100266: ID536
+    100268: ID542
+    100270: ID564
+    100272: ID570
+    100274: ID576
+    100276: ID59
+    100278: ID59 1
+    100280: ID65
+    100282: ID65 1
+    100284: ID79
+    100286: ID85
+    100288: ID91
+    100290: ID97
+    100292: instance_0
+    100294: instance_1
+    100296: instance_10
+    100298: instance_11
+    100300: instance_12
+    100302: instance_13
+    100304: instance_14
+    100306: instance_15
+    100308: instance_16
+    100310: instance_17
+    100312: instance_18
+    100314: instance_19
+    100316: instance_2
+    100318: instance_20
+    100320: instance_21
+    100322: instance_22
+    100324: instance_22 1
+    100326: instance_22 2
+    100328: instance_23
+    100330: instance_23 1
+    100332: instance_23 2
+    100334: instance_24
+    100336: instance_24 1
+    100338: instance_24 2
+    100340: instance_25
+    100342: instance_26
+    100344: instance_27
+    100346: instance_28
+    100348: instance_29
+    100350: instance_3
+    100352: instance_30
+    100354: instance_30 1
+    100356: instance_30 2
+    100358: instance_31
+    100360: instance_31 1
+    100362: instance_31 2
+    100364: instance_32
+    100366: instance_32 1
+    100368: instance_32 2
+    100370: instance_33
+    100372: instance_33 1
+    100374: instance_33 2
+    100376: instance_34
+    100378: instance_35
+    100380: instance_36
+    100382: instance_37
+    100384: instance_38
+    100386: instance_39
+    100388: instance_4
+    100390: instance_40
+    100392: instance_41
+    100394: instance_42
+    100396: instance_43
+    100398: instance_44
+    100400: instance_45
+    100402: instance_5
+    100404: instance_6
+    100406: instance_7
+    100408: instance_8
+    100410: instance_9
+    100412: Latch
+    100414: Latch_-_Assembly__2_3_8in_throw_
+    100416: Latch_-_Barrel
+    100418: Latch_-_Core
+    100420: Latch_-_Faceplate
+    100422: Latch_-_Subassembly
+    100424: Mounting_Plate
+    100426: Mounting_Plate 1
+    100428: Rose_-_Inside
+    100430: Rose_-_Outside
+    100432: Screw_-_Rounded_Head_5_32in_x_1_1_2in
+    100434: Screw_-_Rounded_Head_5_32in_x_1_1_2in 1
+    100436: Screw_Head_-_Philips_0.25in_Recessed
+    100438: Screw_Head_-_Philips_0.25in_Recessed 1
+    100440: Screw_Head_-_Philips_0.25in_Recessed 10
+    100442: Screw_Head_-_Philips_0.25in_Recessed 11
+    100444: Screw_Head_-_Philips_0.25in_Recessed 12
+    100446: Screw_Head_-_Philips_0.25in_Recessed 13
+    100448: Screw_Head_-_Philips_0.25in_Recessed 14
+    100450: Screw_Head_-_Philips_0.25in_Recessed 15
+    100452: Screw_Head_-_Philips_0.25in_Recessed 16
+    100454: Screw_Head_-_Philips_0.25in_Recessed 17
+    100456: Screw_Head_-_Philips_0.25in_Recessed 18
+    100458: Screw_Head_-_Philips_0.25in_Recessed 19
+    100460: Screw_Head_-_Philips_0.25in_Recessed 2
+    100462: Screw_Head_-_Philips_0.25in_Recessed 20
+    100464: Screw_Head_-_Philips_0.25in_Recessed 21
+    100466: Screw_Head_-_Philips_0.25in_Recessed 3
+    100468: Screw_Head_-_Philips_0.25in_Recessed 4
+    100470: Screw_Head_-_Philips_0.25in_Recessed 5
+    100472: Screw_Head_-_Philips_0.25in_Recessed 6
+    100474: Screw_Head_-_Philips_0.25in_Recessed 7
+    100476: Screw_Head_-_Philips_0.25in_Recessed 8
+    100478: Screw_Head_-_Philips_0.25in_Recessed 9
+    100480: Square_Spindle
+    100482: Strike_Plate
+    100484: Strikeplate
+    400000: Bell___Plymouth_Style_Door_Knob_with_key_lock__privacy_lock___non-locking_options__2.375in_throw__1.375in_Thick_Door_
+    400002: Bell_Handle_-_Inside_Assembly
+    400004: Bell_Handle_-_Outside_Assembly
+    400006: //RootNode
+    400008: Door_-_Interior_1.375in_x_78in_x_30in_Flat_Hollow_Core
+    400010: Door_-_Interior_1.375in_x_78in_x_30in_Flat_Hollow_Core_With_Hardware
+    400012: Door_Frame_-_Interior_4.5in_x_78in_x_30in_Door_With_Hardware__1.375in_Thick_Door_
+    400014: Door_Frame_-_Interior__3.5in_wall__1.375in_x_80in_x_12in_Door__With_Mortises_
+    400016: Door_Frame_-_Interior__4.5in_wall__1.375in_x_78in_x_30in_Door__With_Mortises_
+    400018: Door_Jamb_-_4.5in_x_30.5_in__30in_Door_
+    400020: Door_Jamb_-_4.5in_x_79.5_in__78in_H_x_1.375in_T_Door__Latch_Mortise_
+    400022: Door_Jamb_Stop_-_30.125in__30in_Door_
+    400024: Door_Jamb_Stop_-_78_13_16in__78in_Door_
+    400026: Door_Jamb_Stop_-_78_13_16in__78in_Door_ 1
+    400028: Door_Knob_-_Inside_Assembly
+    400030: Door_Knob_-_Outside_Assembly
+    400032: group_0
+    400034: group_0 1
+    400036: group_0 2
+    400038: Handle_-_Bell
+    400040: Handle_-_Bell 1
+    400042: Handle_Detail_-_Privacy_Lock_-_Concave
+    400044: Handle_Detail_-_Twist_Lock
+    400046: Handles_-_Inside
+    400048: Handles_-_Outside
+    400050: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Three_Tab_Side_With_Pin
+    400052: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Three_Tab_Side_With_Pin 1
+    400054: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Three_Tab_Side_With_Pin 2
+    400056: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Two_Tab_Side
+    400058: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Two_Tab_Side 1
+    400060: Hinge_-_Full_Mortise_-_3.5in_x_1.5in_Two_Tab_Side 2
+    400062: Hinge_Bottom_Cap
+    400064: Hinge_Bottom_Cap 1
+    400066: Hinge_Bottom_Cap 2
+    400068: Hinge_Pin_-_3.5in
+    400070: Hinge_Pin_-_3.5in 1
+    400072: Hinge_Pin_-_3.5in 2
+    400074: Hinge_Plate
+    400076: Hinge_Plate 1
+    400078: Hinge_Plate 2
+    400080: ID111
+    400082: ID111 1
+    400084: ID126
+    400086: ID132
+    400088: ID150
+    400090: ID165
+    400092: ID171
+    400094: ID177
+    400096: ID183
+    400098: ID189
+    400100: ID195
+    400102: ID201
+    400104: ID207
+    400106: ID219
+    400108: ID235
+    400110: ID241
+    400112: ID247
+    400114: ID253
+    400116: ID259
+    400118: ID265
+    400120: ID271
+    400122: ID275
+    400124: ID29
+    400126: ID29 1
+    400128: ID297
+    400130: ID303
+    400132: ID317
+    400134: ID317 1
+    400136: ID317 10
+    400138: ID317 11
+    400140: ID317 12
+    400142: ID317 13
+    400144: ID317 14
+    400146: ID317 15
+    400148: ID317 16
+    400150: ID317 17
+    400152: ID317 18
+    400154: ID317 19
+    400156: ID317 2
+    400158: ID317 20
+    400160: ID317 21
+    400162: ID317 3
+    400164: ID317 4
+    400166: ID317 5
+    400168: ID317 6
+    400170: ID317 7
+    400172: ID317 8
+    400174: ID317 9
+    400176: ID332
+    400178: ID338
+    400180: ID344
+    400182: ID35
+    400184: ID35 1
+    400186: ID359
+    400188: ID359 1
+    400190: ID359 2
+    400192: ID365
+    400194: ID365 1
+    400196: ID365 2
+    400198: ID371
+    400200: ID371 1
+    400202: ID371 2
+    400204: ID392
+    400206: ID398
+    400208: ID406
+    400210: ID41
+    400212: ID41 1
+    400214: ID412
+    400216: ID418
+    400218: ID424
+    400220: ID441
+    400222: ID441 1
+    400224: ID441 2
+    400226: ID447
+    400228: ID447 1
+    400230: ID447 2
+    400232: ID453
+    400234: ID453 1
+    400236: ID453 2
+    400238: ID466
+    400240: ID466 1
+    400242: ID466 2
+    400244: ID47
+    400246: ID47 1
+    400248: ID483
+    400250: ID483 1
+    400252: ID483 2
+    400254: ID499
+    400256: ID505
+    400258: ID511
+    400260: ID53
+    400262: ID53 1
+    400264: ID530
+    400266: ID536
+    400268: ID542
+    400270: ID564
+    400272: ID570
+    400274: ID576
+    400276: ID59
+    400278: ID59 1
+    400280: ID65
+    400282: ID65 1
+    400284: ID79
+    400286: ID85
+    400288: ID91
+    400290: ID97
+    400292: instance_0
+    400294: instance_1
+    400296: instance_10
+    400298: instance_11
+    400300: instance_12
+    400302: instance_13
+    400304: instance_14
+    400306: instance_15
+    400308: instance_16
+    400310: instance_17
+    400312: instance_18
+    400314: instance_19
+    400316: instance_2
+    400318: instance_20
+    400320: instance_21
+    400322: instance_22
+    400324: instance_22 1
+    400326: instance_22 2
+    400328: instance_23
+    400330: instance_23 1
+    400332: instance_23 2
+    400334: instance_24
+    400336: instance_24 1
+    400338: instance_24 2
+    400340: instance_25
+    400342: instance_26
+    400344: instance_27
+    400346: instance_28
+    400348: instance_29
+    400350: instance_3
+    400352: instance_30
+    400354: instance_30 1
+    400356: instance_30 2
+    400358: instance_31
+    400360: instance_31 1
+    400362: instance_31 2
+    400364: instance_32
+    400366: instance_32 1
+    400368: instance_32 2
+    400370: instance_33
+    400372: instance_33 1
+    400374: instance_33 2
+    400376: instance_34
+    400378: instance_35
+    400380: instance_36
+    400382: instance_37
+    400384: instance_38
+    400386: instance_39
+    400388: instance_4
+    400390: instance_40
+    400392: instance_41
+    400394: instance_42
+    400396: instance_43
+    400398: instance_44
+    400400: instance_45
+    400402: instance_5
+    400404: instance_6
+    400406: instance_7
+    400408: instance_8
+    400410: instance_9
+    400412: Latch
+    400414: Latch_-_Assembly__2_3_8in_throw_
+    400416: Latch_-_Barrel
+    400418: Latch_-_Core
+    400420: Latch_-_Faceplate
+    400422: Latch_-_Subassembly
+    400424: Mounting_Plate
+    400426: Mounting_Plate 1
+    400428: Rose_-_Inside
+    400430: Rose_-_Outside
+    400432: Screw_-_Rounded_Head_5_32in_x_1_1_2in
+    400434: Screw_-_Rounded_Head_5_32in_x_1_1_2in 1
+    400436: Screw_Head_-_Philips_0.25in_Recessed
+    400438: Screw_Head_-_Philips_0.25in_Recessed 1
+    400440: Screw_Head_-_Philips_0.25in_Recessed 10
+    400442: Screw_Head_-_Philips_0.25in_Recessed 11
+    400444: Screw_Head_-_Philips_0.25in_Recessed 12
+    400446: Screw_Head_-_Philips_0.25in_Recessed 13
+    400448: Screw_Head_-_Philips_0.25in_Recessed 14
+    400450: Screw_Head_-_Philips_0.25in_Recessed 15
+    400452: Screw_Head_-_Philips_0.25in_Recessed 16
+    400454: Screw_Head_-_Philips_0.25in_Recessed 17
+    400456: Screw_Head_-_Philips_0.25in_Recessed 18
+    400458: Screw_Head_-_Philips_0.25in_Recessed 19
+    400460: Screw_Head_-_Philips_0.25in_Recessed 2
+    400462: Screw_Head_-_Philips_0.25in_Recessed 20
+    400464: Screw_Head_-_Philips_0.25in_Recessed 21
+    400466: Screw_Head_-_Philips_0.25in_Recessed 3
+    400468: Screw_Head_-_Philips_0.25in_Recessed 4
+    400470: Screw_Head_-_Philips_0.25in_Recessed 5
+    400472: Screw_Head_-_Philips_0.25in_Recessed 6
+    400474: Screw_Head_-_Philips_0.25in_Recessed 7
+    400476: Screw_Head_-_Philips_0.25in_Recessed 8
+    400478: Screw_Head_-_Philips_0.25in_Recessed 9
+    400480: Square_Spindle
+    400482: Strike_Plate
+    400484: Strikeplate
+    2300000: Door_-_Interior_1.375in_x_78in_x_30in_Flat_Hollow_Core
+    2300002: Door_Frame_-_Interior__3.5in_wall__1.375in_x_80in_x_12in_Door__With_Mortises_
+    2300004: Door_Jamb_-_4.5in_x_30.5_in__30in_Door_
+    2300006: Door_Jamb_-_4.5in_x_79.5_in__78in_H_x_1.375in_T_Door__Latch_Mortise_
+    2300008: Door_Jamb_Stop_-_30.125in__30in_Door_
+    2300010: Door_Jamb_Stop_-_78_13_16in__78in_Door_
+    2300012: Door_Jamb_Stop_-_78_13_16in__78in_Door_ 1
+    2300014: group_0
+    2300016: group_0 1
+    2300018: group_0 2
+    2300020: Handle_-_Bell
+    2300022: Handle_-_Bell 1
+    2300024: Handle_Detail_-_Privacy_Lock_-_Concave
+    2300026: Handle_Detail_-_Twist_Lock
+    2300028: Hinge_Bottom_Cap
+    2300030: Hinge_Bottom_Cap 1
+    2300032: Hinge_Bottom_Cap 2
+    2300034: Hinge_Pin_-_3.5in
+    2300036: Hinge_Pin_-_3.5in 1
+    2300038: Hinge_Pin_-_3.5in 2
+    2300040: Hinge_Plate
+    2300042: Hinge_Plate 1
+    2300044: Hinge_Plate 2
+    2300046: ID111
+    2300048: ID111 1
+    2300050: ID126
+    2300052: ID132
+    2300054: ID150
+    2300056: ID165
+    2300058: ID171
+    2300060: ID177
+    2300062: ID183
+    2300064: ID189
+    2300066: ID195
+    2300068: ID219
+    2300070: ID235
+    2300072: ID241
+    2300074: ID247
+    2300076: ID253
+    2300078: ID259
+    2300080: ID29
+    2300082: ID29 1
+    2300084: ID297
+    2300086: ID303
+    2300088: ID317
+    2300090: ID317 1
+    2300092: ID317 10
+    2300094: ID317 11
+    2300096: ID317 12
+    2300098: ID317 13
+    2300100: ID317 14
+    2300102: ID317 15
+    2300104: ID317 16
+    2300106: ID317 17
+    2300108: ID317 18
+    2300110: ID317 19
+    2300112: ID317 2
+    2300114: ID317 20
+    2300116: ID317 21
+    2300118: ID317 3
+    2300120: ID317 4
+    2300122: ID317 5
+    2300124: ID317 6
+    2300126: ID317 7
+    2300128: ID317 8
+    2300130: ID317 9
+    2300132: ID332
+    2300134: ID338
+    2300136: ID344
+    2300138: ID35
+    2300140: ID35 1
+    2300142: ID359
+    2300144: ID359 1
+    2300146: ID359 2
+    2300148: ID365
+    2300150: ID365 1
+    2300152: ID365 2
+    2300154: ID371
+    2300156: ID371 1
+    2300158: ID371 2
+    2300160: ID392
+    2300162: ID398
+    2300164: ID406
+    2300166: ID41
+    2300168: ID41 1
+    2300170: ID412
+    2300172: ID418
+    2300174: ID424
+    2300176: ID441
+    2300178: ID441 1
+    2300180: ID441 2
+    2300182: ID447
+    2300184: ID447 1
+    2300186: ID447 2
+    2300188: ID453
+    2300190: ID453 1
+    2300192: ID453 2
+    2300194: ID466
+    2300196: ID466 1
+    2300198: ID466 2
+    2300200: ID47
+    2300202: ID47 1
+    2300204: ID483
+    2300206: ID483 1
+    2300208: ID483 2
+    2300210: ID499
+    2300212: ID505
+    2300214: ID511
+    2300216: ID53
+    2300218: ID53 1
+    2300220: ID530
+    2300222: ID536
+    2300224: ID542
+    2300226: ID564
+    2300228: ID570
+    2300230: ID576
+    2300232: ID59
+    2300234: ID59 1
+    2300236: ID65
+    2300238: ID65 1
+    2300240: ID79
+    2300242: ID85
+    2300244: ID91
+    2300246: ID97
+    2300248: Latch
+    2300250: Latch_-_Barrel
+    2300252: Latch_-_Core
+    2300254: Latch_-_Faceplate
+    2300256: Mounting_Plate
+    2300258: Mounting_Plate 1
+    2300260: Rose_-_Inside
+    2300262: Rose_-_Outside
+    2300264: Screw_-_Rounded_Head_5_32in_x_1_1_2in
+    2300266: Screw_-_Rounded_Head_5_32in_x_1_1_2in 1
+    2300268: Screw_Head_-_Philips_0.25in_Recessed
+    2300270: Screw_Head_-_Philips_0.25in_Recessed 1
+    2300272: Screw_Head_-_Philips_0.25in_Recessed 10
+    2300274: Screw_Head_-_Philips_0.25in_Recessed 11
+    2300276: Screw_Head_-_Philips_0.25in_Recessed 12
+    2300278: Screw_Head_-_Philips_0.25in_Recessed 13
+    2300280: Screw_Head_-_Philips_0.25in_Recessed 14
+    2300282: Screw_Head_-_Philips_0.25in_Recessed 15
+    2300284: Screw_Head_-_Philips_0.25in_Recessed 16
+    2300286: Screw_Head_-_Philips_0.25in_Recessed 17
+    2300288: Screw_Head_-_Philips_0.25in_Recessed 18
+    2300290: Screw_Head_-_Philips_0.25in_Recessed 19
+    2300292: Screw_Head_-_Philips_0.25in_Recessed 2
+    2300294: Screw_Head_-_Philips_0.25in_Recessed 20
+    2300296: Screw_Head_-_Philips_0.25in_Recessed 21
+    2300298: Screw_Head_-_Philips_0.25in_Recessed 3
+    2300300: Screw_Head_-_Philips_0.25in_Recessed 4
+    2300302: Screw_Head_-_Philips_0.25in_Recessed 5
+    2300304: Screw_Head_-_Philips_0.25in_Recessed 6
+    2300306: Screw_Head_-_Philips_0.25in_Recessed 7
+    2300308: Screw_Head_-_Philips_0.25in_Recessed 8
+    2300310: Screw_Head_-_Philips_0.25in_Recessed 9
+    2300312: Square_Spindle
+    2300314: Strike_Plate
+    3300000: Door_-_Interior_1.375in_x_78in_x_30in_Flat_Hollow_Core
+    3300002: Door_Frame_-_Interior__3.5in_wall__1.375in_x_80in_x_12in_Door__With_Mortises_
+    3300004: Door_Jamb_-_4.5in_x_30.5_in__30in_Door_
+    3300006: Door_Jamb_-_4.5in_x_79.5_in__78in_H_x_1.375in_T_Door__Latch_Mortise_
+    3300008: Door_Jamb_Stop_-_30.125in__30in_Door_
+    3300010: Door_Jamb_Stop_-_78_13_16in__78in_Door_
+    3300012: Door_Jamb_Stop_-_78_13_16in__78in_Door_ 1
+    3300014: group_0
+    3300016: group_0 1
+    3300018: group_0 2
+    3300020: Handle_-_Bell
+    3300022: Handle_-_Bell 1
+    3300024: Handle_Detail_-_Privacy_Lock_-_Concave
+    3300026: Handle_Detail_-_Twist_Lock
+    3300028: Hinge_Bottom_Cap
+    3300030: Hinge_Bottom_Cap 1
+    3300032: Hinge_Bottom_Cap 2
+    3300034: Hinge_Pin_-_3.5in
+    3300036: Hinge_Pin_-_3.5in 1
+    3300038: Hinge_Pin_-_3.5in 2
+    3300040: Hinge_Plate
+    3300042: Hinge_Plate 1
+    3300044: Hinge_Plate 2
+    3300046: ID111
+    3300048: ID111 1
+    3300050: ID126
+    3300052: ID132
+    3300054: ID150
+    3300056: ID165
+    3300058: ID171
+    3300060: ID177
+    3300062: ID183
+    3300064: ID189
+    3300066: ID195
+    3300068: ID219
+    3300070: ID235
+    3300072: ID241
+    3300074: ID247
+    3300076: ID253
+    3300078: ID259
+    3300080: ID29
+    3300082: ID29 1
+    3300084: ID297
+    3300086: ID303
+    3300088: ID317
+    3300090: ID317 1
+    3300092: ID317 10
+    3300094: ID317 11
+    3300096: ID317 12
+    3300098: ID317 13
+    3300100: ID317 14
+    3300102: ID317 15
+    3300104: ID317 16
+    3300106: ID317 17
+    3300108: ID317 18
+    3300110: ID317 19
+    3300112: ID317 2
+    3300114: ID317 20
+    3300116: ID317 21
+    3300118: ID317 3
+    3300120: ID317 4
+    3300122: ID317 5
+    3300124: ID317 6
+    3300126: ID317 7
+    3300128: ID317 8
+    3300130: ID317 9
+    3300132: ID332
+    3300134: ID338
+    3300136: ID344
+    3300138: ID35
+    3300140: ID35 1
+    3300142: ID359
+    3300144: ID359 1
+    3300146: ID359 2
+    3300148: ID365
+    3300150: ID365 1
+    3300152: ID365 2
+    3300154: ID371
+    3300156: ID371 1
+    3300158: ID371 2
+    3300160: ID392
+    3300162: ID398
+    3300164: ID406
+    3300166: ID41
+    3300168: ID41 1
+    3300170: ID412
+    3300172: ID418
+    3300174: ID424
+    3300176: ID441
+    3300178: ID441 1
+    3300180: ID441 2
+    3300182: ID447
+    3300184: ID447 1
+    3300186: ID447 2
+    3300188: ID453
+    3300190: ID453 1
+    3300192: ID453 2
+    3300194: ID466
+    3300196: ID466 1
+    3300198: ID466 2
+    3300200: ID47
+    3300202: ID47 1
+    3300204: ID483
+    3300206: ID483 1
+    3300208: ID483 2
+    3300210: ID499
+    3300212: ID505
+    3300214: ID511
+    3300216: ID53
+    3300218: ID53 1
+    3300220: ID530
+    3300222: ID536
+    3300224: ID542
+    3300226: ID564
+    3300228: ID570
+    3300230: ID576
+    3300232: ID59
+    3300234: ID59 1
+    3300236: ID65
+    3300238: ID65 1
+    3300240: ID79
+    3300242: ID85
+    3300244: ID91
+    3300246: ID97
+    3300248: Latch
+    3300250: Latch_-_Barrel
+    3300252: Latch_-_Core
+    3300254: Latch_-_Faceplate
+    3300256: Mounting_Plate
+    3300258: Mounting_Plate 1
+    3300260: Rose_-_Inside
+    3300262: Rose_-_Outside
+    3300264: Screw_-_Rounded_Head_5_32in_x_1_1_2in
+    3300266: Screw_-_Rounded_Head_5_32in_x_1_1_2in 1
+    3300268: Screw_Head_-_Philips_0.25in_Recessed
+    3300270: Screw_Head_-_Philips_0.25in_Recessed 1
+    3300272: Screw_Head_-_Philips_0.25in_Recessed 10
+    3300274: Screw_Head_-_Philips_0.25in_Recessed 11
+    3300276: Screw_Head_-_Philips_0.25in_Recessed 12
+    3300278: Screw_Head_-_Philips_0.25in_Recessed 13
+    3300280: Screw_Head_-_Philips_0.25in_Recessed 14
+    3300282: Screw_Head_-_Philips_0.25in_Recessed 15
+    3300284: Screw_Head_-_Philips_0.25in_Recessed 16
+    3300286: Screw_Head_-_Philips_0.25in_Recessed 17
+    3300288: Screw_Head_-_Philips_0.25in_Recessed 18
+    3300290: Screw_Head_-_Philips_0.25in_Recessed 19
+    3300292: Screw_Head_-_Philips_0.25in_Recessed 2
+    3300294: Screw_Head_-_Philips_0.25in_Recessed 20
+    3300296: Screw_Head_-_Philips_0.25in_Recessed 21
+    3300298: Screw_Head_-_Philips_0.25in_Recessed 3
+    3300300: Screw_Head_-_Philips_0.25in_Recessed 4
+    3300302: Screw_Head_-_Philips_0.25in_Recessed 5
+    3300304: Screw_Head_-_Philips_0.25in_Recessed 6
+    3300306: Screw_Head_-_Philips_0.25in_Recessed 7
+    3300308: Screw_Head_-_Philips_0.25in_Recessed 8
+    3300310: Screw_Head_-_Philips_0.25in_Recessed 9
+    3300312: Square_Spindle
+    3300314: Strike_Plate
+    4300000: Handle_-_Bell
+    4300002: Mounting_Plate
+    4300004: ID29
+    4300006: ID35
+    4300008: ID41
+    4300010: ID47
+    4300012: ID53
+    4300014: ID59
+    4300016: ID65
+    4300018: Rose_-_Inside
+    4300020: ID79
+    4300022: ID85
+    4300024: ID91
+    4300026: ID97
+    4300028: Screw_-_Rounded_Head_5_32in_x_1_1_2in
+    4300030: ID111
+    4300032: Handle_Detail_-_Twist_Lock
+    4300034: ID126
+    4300036: ID132
+    4300038: Handle_Detail_-_Privacy_Lock_-_Concave
+    4300040: ID150
+    4300042: Rose_-_Outside
+    4300044: ID165
+    4300046: ID171
+    4300048: ID177
+    4300050: ID183
+    4300052: ID189
+    4300054: ID195
+    4300056: Square_Spindle
+    4300058: ID219
+    4300060: Latch_-_Core
+    4300062: ID235
+    4300064: ID241
+    4300066: ID247
+    4300068: ID253
+    4300070: ID259
+    4300072: Latch
+    4300074: Latch_-_Barrel
+    4300076: ID297
+    4300078: ID303
+    4300080: Screw_Head_-_Philips_0.25in_Recessed
+    4300082: ID317
+    4300084: Latch_-_Faceplate
+    4300086: ID332
+    4300088: ID338
+    4300090: ID344
+    4300092: group_0
+    4300094: ID359
+    4300096: ID365
+    4300098: ID371
+    4300100: Door_-_Interior_1.375in_x_78in_x_30in_Flat_Hollow_Core
+    4300102: ID392
+    4300104: ID398
+    4300106: ID406
+    4300108: ID412
+    4300110: ID418
+    4300112: ID424
+    4300114: Hinge_Plate
+    4300116: ID441
+    4300118: ID447
+    4300120: ID453
+    4300122: Hinge_Bottom_Cap
+    4300124: ID466
+    4300126: Hinge_Pin_-_3.5in
+    4300128: ID483
+    4300130: Strike_Plate
+    4300132: ID499
+    4300134: ID505
+    4300136: ID511
+    4300138: Door_Frame_-_Interior__3.5in_wall__1.375in_x_80in_x_12in_Door__With_Mortises_
+    4300140: ID530
+    4300142: ID536
+    4300144: ID542
+    4300146: Door_Jamb_Stop_-_78_13_16in__78in_Door_
+    4300148: Door_Jamb_-_4.5in_x_79.5_in__78in_H_x_1.375in_T_Door__Latch_Mortise_
+    4300150: ID564
+    4300152: ID570
+    4300154: ID576
+    4300156: Door_Jamb_Stop_-_78_13_16in__78in_Door_
+    4300158: Door_Jamb_Stop_-_30.125in__30in_Door_
+    4300160: Door_Jamb_-_4.5in_x_30.5_in__30in_Door_
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
