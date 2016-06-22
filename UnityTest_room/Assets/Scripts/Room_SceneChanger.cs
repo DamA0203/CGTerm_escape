@@ -7,6 +7,8 @@ public class Room_SceneChanger : MonoBehaviour {
     public GameObject menuTitleButton;
     public GameObject menuExitButton;
     public GameObject menuCancelButton;
+    public GameObject menuHelpButton;
+    public GameObject helpPage;
 
     public GameObject titleWindow;
     public GameObject titleYesButton;
@@ -19,6 +21,7 @@ public class Room_SceneChanger : MonoBehaviour {
     bool menuWindowOnCheck;
     bool titleWindowOnCheck;
     bool exitWindowOnCheck;
+    bool helpOnCheck;
 
     // Use this for initialization
     void Start () {
@@ -27,7 +30,9 @@ public class Room_SceneChanger : MonoBehaviour {
         menuWindow.SetActive(false);
         menuTitleButton.SetActive(false);
         menuExitButton.SetActive(false);
+        menuHelpButton.SetActive(false);
         menuCancelButton.SetActive(false);
+        helpPage.SetActive(false);
         menuWindowOnCheck = false;
 
         titleWindow.SetActive(false);
@@ -39,6 +44,7 @@ public class Room_SceneChanger : MonoBehaviour {
         exitYesButton.SetActive(false);
         exitNoButton.SetActive(false);
         exitWindowOnCheck = false;
+        helpOnCheck = false;
     }
 	
 	// Update is called once per frame
@@ -68,6 +74,11 @@ public class Room_SceneChanger : MonoBehaviour {
                 menuWindowOnCheck = true;
                 exitWindowOnCheck = false;
             }
+            else if (helpOnCheck)
+            {
+                Debug.Log("[Escape]Go back to menu window.");
+                helpOnCheck = false;
+            }
         }
 
         if (menuWindowOnCheck)
@@ -75,6 +86,7 @@ public class Room_SceneChanger : MonoBehaviour {
             menuWindow.SetActive(true);
             menuTitleButton.SetActive(true);
             menuExitButton.SetActive(true);
+            menuHelpButton.SetActive(true);
             menuCancelButton.SetActive(true);
         }
         else
@@ -82,6 +94,7 @@ public class Room_SceneChanger : MonoBehaviour {
             menuWindow.SetActive(false);
             menuTitleButton.SetActive(false);
             menuExitButton.SetActive(false);
+            menuHelpButton.SetActive(false);
             menuCancelButton.SetActive(false);
         }
 
@@ -110,6 +123,14 @@ public class Room_SceneChanger : MonoBehaviour {
             exitYesButton.SetActive(false);
             exitNoButton.SetActive(false);
         }
+        if (helpOnCheck)
+        {
+            helpPage.SetActive(true);
+        }
+        else
+        {
+            helpPage.SetActive(false);
+        }
     }
 
     public void TitleButton()
@@ -126,10 +147,22 @@ public class Room_SceneChanger : MonoBehaviour {
         exitWindowOnCheck = true;
     }
 
+    public void HelpButton()
+    {
+        Debug.Log("[Help]Open help page.");
+        helpOnCheck = true;
+    }
+
     public void CancelButton()
     {
         Debug.Log("[Cancel]Close menu window.");
         menuWindowOnCheck = false;
+    }
+
+    public void HelpPage()
+    {
+        Debug.Log("[Touch]Close help page.");
+        helpOnCheck = false;
     }
 
     public void TitleYesButton()

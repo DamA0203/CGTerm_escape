@@ -7,9 +7,11 @@ public class Title_SceneChanger : MonoBehaviour {
     public GameObject yesButton;
     public GameObject noButton;
     public GameObject helpPage;
+    public GameObject infoPage;
 
     bool windowOnCheck;
     bool helpOnCheck;
+    bool infoOnCheck;
 
     // Use this for initialization
     void Start () {
@@ -18,8 +20,10 @@ public class Title_SceneChanger : MonoBehaviour {
         yesButton.SetActive(false);
         noButton.SetActive(false);
         helpPage.SetActive(false);
+        infoPage.SetActive(false);
         windowOnCheck = false;
         helpOnCheck = false;
+        infoOnCheck = false;
     }
 	
 	// Update is called once per frame
@@ -32,6 +36,12 @@ public class Title_SceneChanger : MonoBehaviour {
                 Debug.Log("[Escape]Close help page.");
                 helpPage.SetActive(false);
                 helpOnCheck = false;
+            }
+            else if (infoOnCheck)
+            {
+                Debug.Log("[Escape]Close info page.");
+                infoPage.SetActive(false);
+                infoOnCheck = false;
             }
             else if (!windowOnCheck)
             {
@@ -80,10 +90,24 @@ public class Title_SceneChanger : MonoBehaviour {
         helpOnCheck = true;
     }
 
+    public void InfoButton()
+    {
+        Debug.Log("[Info]Open info page.");
+        infoPage.SetActive(true);
+        infoOnCheck = true;
+    }
+
     public void HelpPage()
     {
         Debug.Log("[Touch]Close help page.");
         helpPage.SetActive(false);
         helpOnCheck = false;
+    }
+
+    public void InfoPage()
+    {
+        Debug.Log("[Touch]Close info page.");
+        infoPage.SetActive(false);
+        infoOnCheck = false;
     }
 }

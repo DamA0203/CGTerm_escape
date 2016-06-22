@@ -50,6 +50,11 @@ _This document contains `Project Proposal` and `Update Log.`_
 
 # Update Log
 
+##### 2016.06.23
+
+* Almost complete
+  * Script Addition (Camera zoom, Item use, etc.)
+
 ##### 2016.06.22
 
 * Room Implementation
