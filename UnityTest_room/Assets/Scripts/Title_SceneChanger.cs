@@ -3,22 +3,22 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class Title_SceneChanger : MonoBehaviour {
-    public GameObject box;
+    public GameObject window;
     public GameObject yesButton;
     public GameObject noButton;
     public GameObject helpPage;
 
-    bool boxOnCheck;
+    bool windowOnCheck;
     bool helpOnCheck;
 
     // Use this for initialization
     void Start () {
-        Debug.Log("Now title Page.");
-        box.SetActive(false);
+        Debug.Log("Title Scene.");
+        window.SetActive(false);
         yesButton.SetActive(false);
         noButton.SetActive(false);
         helpPage.SetActive(false);
-        boxOnCheck = false;
+        windowOnCheck = false;
         helpOnCheck = false;
     }
 	
@@ -29,60 +29,60 @@ public class Title_SceneChanger : MonoBehaviour {
         {
             if (helpOnCheck)
             {
-                Debug.Log("Escape key. Close help page.");
+                Debug.Log("[Escape]Close help page.");
                 helpPage.SetActive(false);
                 helpOnCheck = false;
             }
-            else if (!boxOnCheck)
+            else if (!windowOnCheck)
             {
-                Debug.Log("Escape key. Open notification window.");
-                box.SetActive(true);
+                Debug.Log("[Escape]Open notification window.");
+                window.SetActive(true);
                 yesButton.SetActive(true);
                 noButton.SetActive(true);
-                boxOnCheck = true;
+                windowOnCheck = true;
             }
             else
             {
-                Debug.Log("Escape key. Close notification window.");
-                box.SetActive(false);
+                Debug.Log("[Escape]Close notification window.");
+                window.SetActive(false);
                 yesButton.SetActive(false);
                 noButton.SetActive(false);
-                boxOnCheck = false;
+                windowOnCheck = false;
             }
         }
     }
 
     public void YesButton()
     {
-        Debug.Log("Yes-button. Exit game.");
+        Debug.Log("[Yes]Exit game.");
         Application.Quit();
     }
 
     public void NoButton()
     {
-        Debug.Log("No-button. Close notification window.");
-        box.SetActive(false);
+        Debug.Log("[No]Close notification window.");
+        window.SetActive(false);
         yesButton.SetActive(false);
         noButton.SetActive(false);
-        boxOnCheck = false;
+        windowOnCheck = false;
     }
 
     public void StartButton()
     {
-        Debug.Log("Start button. Move to game.");
-        SceneManager.LoadScene("test01");
+        Debug.Log("[Start]Move to game.");
+        SceneManager.LoadScene("room");
     }
 
     public void HelpButton()
     {
-        Debug.Log("Help button. Open help page.");
+        Debug.Log("[Help]Open help page.");
         helpPage.SetActive(true);
         helpOnCheck = true;
     }
 
     public void HelpPage()
     {
-        Debug.Log("Touch. Close help page.");
+        Debug.Log("[Touch]Close help page.");
         helpPage.SetActive(false);
         helpOnCheck = false;
     }
