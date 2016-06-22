@@ -9,12 +9,16 @@ public class Room_CameraControl : MonoBehaviour {
     public GameObject exitWindow;
     public GameObject zoomOutButton;
 
+    public GameObject direction1;
+    public GameObject direction2;
+    public GameObject direction3;
+    public GameObject direction4;
+
     Vector3 defaultPosition;
     Quaternion defaultRotation;
     float defaultZoom;
 
     Vector3 prePosition;
-    Quaternion preRotation;
 
     float movePosX, prePosX;
 
@@ -40,7 +44,6 @@ public class Room_CameraControl : MonoBehaviour {
 
         //initialize previous state
         prePosition = defaultPosition;
-        preRotation = defaultRotation;
 
         zoomInState = false;
         slideState = false;
@@ -80,16 +83,6 @@ public class Room_CameraControl : MonoBehaviour {
                     Debug.Log("x=" + touchPos.position.x + " y=" + touchPos.position.y);
                     prePosX = touchPos.position.x;
                     slideState = false;
-
-                    Ray ray = Camera.main.ScreenPointToRay(touchPos.position);
-                    if (Physics.Raycast(ray, out hit))
-                    {
-                        Debug.Log("[Hit]Point: " + hit.point);
-                        if (hit.collider.name == "TouchTestCube")
-                        {
-                            Debug.Log("[Hit]Object: " + hit.collider.name);
-                        }
-                    }
                     break;
                 
                 //rotate camera
@@ -97,7 +90,7 @@ public class Room_CameraControl : MonoBehaviour {
                     Debug.Log("[Touch]Moved.");
                     Debug.Log("x=" + touchPos.position.x + " y=" + touchPos.position.y);
                     movePosX = prePosX - touchPos.position.x;
-                    cameraParent.transform.Rotate(0, movePosX * Time.deltaTime, 0);
+                    cameraParent.transform.Rotate(0, movePosX * Time.deltaTime * 1.5f, 0);
                     prePosX = touchPos.position.x;
                     slideState = true;
                     break;
@@ -105,18 +98,24 @@ public class Room_CameraControl : MonoBehaviour {
                 case TouchPhase.Ended:
                     Debug.Log("[Touch]Ended.");
 
-                    ///*
-                    //zoom in
                     if (!slideState && !zoomInState)
                     {
-                        Debug.Log("Zoom in camera.");
-                        prePosition = Camera.main.transform.position;
-                        Camera.main.transform.Translate(posX * Time.deltaTime * 0.2f, 0, 0);
-                        Camera.main.fieldOfView = Camera.main.fieldOfView * 0.5f;
-                        zoomInState = true;
-                        zoomOutButton.SetActive(true);
+                        Ray ray = Camera.main.ScreenPointToRay(touchPos.position);
+                        if (Physics.Raycast(ray, out hit))
+                        {
+                            Debug.Log("[Hit]Point: " + hit.point);
+                            Debug.Log("[Hit]Object: " + hit.collider.name);
+                            if (hit.collider.name == "Closet")
+                            {
+                                prePosition = Camera.main.transform.position;
+                                Camera.main.transform.LookAt(direction3.transform.position);
+                                Camera.main.transform.Translate(4.75f, -1.0f, 0);
+                                Camera.main.fieldOfView = Camera.main.fieldOfView * 0.20f;
+                                zoomInState = true;
+                                zoomOutButton.SetActive(true);
+                            }
+                        }
                     }
-                    //*/
                     break;
             }
         }
