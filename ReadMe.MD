@@ -21,8 +21,7 @@ _This document contains `Project Proposal` and `Update Log.`_
 ##### Subject Selection Reasons
 
 * Camera Space change according to screen touch
-* Rotation of a object in Object Space
-* Shadow change according to moving object
+* Rotation of the object
 * Interest in room escape game
 
 
@@ -52,8 +51,8 @@ _This document contains `Project Proposal` and `Update Log.`_
 
 ##### 2016.06.23
 
-* Almost complete
-  * Script Addition (Camera zoom, Item use, etc.)
+* Script Addition (Camera zoom, Item use, sound, etc.)
+
 
 ##### 2016.06.22
 
