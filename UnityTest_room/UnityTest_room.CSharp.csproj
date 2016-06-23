@@ -65,7 +65,9 @@
   <ItemGroup>
     <Compile Include="Assets\Clock\Scripts\Clock.cs" />
     <Compile Include="Assets\Scripts\Room_CameraControl.cs" />
+    <Compile Include="Assets\Scripts\Room_Clockcontroller.cs" />
     <Compile Include="Assets\Scripts\Room_GameController.cs" />
+    <Compile Include="Assets\Scripts\Room_Passcontroller.cs" />
     <Compile Include="Assets\Scripts\Room_SceneChanger.cs" />
     <Compile Include="Assets\Scripts\Title_SceneChanger.cs" />
   </ItemGroup>

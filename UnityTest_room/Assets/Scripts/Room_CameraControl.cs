@@ -28,6 +28,7 @@ public class Room_CameraControl : MonoBehaviour {
     bool slideState;
     int touchDelay;
 
+    public static bool passZoom;
     bool pianoZoom;
     bool wallhintZoom;
 
@@ -53,7 +54,8 @@ public class Room_CameraControl : MonoBehaviour {
         zoomInState = false;
         slideState = false;
         touchDelay = 10;
-
+        
+        passZoom = false;
         pianoZoom = false;
         wallhintZoom = false;
 
@@ -122,8 +124,8 @@ public class Room_CameraControl : MonoBehaviour {
                                 Debug.Log("Zoom in camera.");
                                 prePosition = Camera.main.transform.position;
                                 Camera.main.transform.LookAt(direction3.transform.position);
-                                Camera.main.transform.Translate(4.75f, -1.0f, 0);
-                                Camera.main.fieldOfView = Camera.main.fieldOfView * 0.20f;
+                                Camera.main.transform.Translate(4.0f, 0, 0);
+                                Camera.main.fieldOfView = Camera.main.fieldOfView * 0.45f;
                                 zoomInState = true;
                                 zoomOutButton.SetActive(true);
                             }
@@ -133,7 +135,7 @@ public class Room_CameraControl : MonoBehaviour {
                                 prePosition = Camera.main.transform.position;
                                 Camera.main.transform.LookAt(direction2.transform.position);
                                 Camera.main.transform.Translate(4.0f, 0, 0);
-                                Camera.main.fieldOfView = Camera.main.fieldOfView * 0.50f;
+                                Camera.main.fieldOfView = Camera.main.fieldOfView * 0.44f;
                                 zoomInState = true;
                                 zoomOutButton.SetActive(true);
                             }
@@ -187,6 +189,7 @@ public class Room_CameraControl : MonoBehaviour {
                                 Camera.main.transform.LookAt(direction4.transform.position);
                                 Camera.main.transform.Translate(1.25f, -0.5f, 0);
                                 Camera.main.fieldOfView = Camera.main.fieldOfView * 0.35f;
+                                passZoom = true;
                                 zoomInState = true;
                                 zoomOutButton.SetActive(true);
                             }
@@ -272,7 +275,7 @@ public class Room_CameraControl : MonoBehaviour {
                             }
                         }
                     }
-                    else if (!slideState)
+                    else if (!slideState && zoomInState)
                     {
                         Ray ray = Camera.main.ScreenPointToRay(touchPos.position);
                         if (Physics.Raycast(ray, out hit))
@@ -285,6 +288,11 @@ public class Room_CameraControl : MonoBehaviour {
                                 Camera.main.transform.Translate(0, 0, 5.25f);
                                 Camera.main.transform.LookAt(wallhint.transform.position);
                                 wallhintZoom = true;
+                            }
+                            else if (hit.collider.name == "Gusuk")
+                            {
+                                Camera.main.transform.Translate(0.75f, -1.0f, 0);
+                                Camera.main.fieldOfView = Camera.main.fieldOfView * 0.40f;
                             }
                         }
                     }
@@ -312,6 +320,7 @@ public class Room_CameraControl : MonoBehaviour {
             Camera.main.transform.LookAt(direction2.transform.position);
             wallhintZoom = false;
         }
+        passZoom = false;
 
         zoomOutButton.SetActive(false);
         zoomInState = false;

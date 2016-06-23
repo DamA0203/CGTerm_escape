@@ -8,7 +8,10 @@ public class Room_GameController : MonoBehaviour {
     public GameObject exitWindow;
 
     public GameObject key1;
+    public GameObject glassdoor;
+    public GameObject drawer1;
     public GameObject drawer2;
+    public GameObject drawer3;
     public GameObject paper;
     public GameObject paper_pianohint;
     public GameObject door;
@@ -52,6 +55,8 @@ public class Room_GameController : MonoBehaviour {
     public AudioClip openwindow;
     public AudioClip hooray;
     public AudioClip locked;
+    public AudioClip guitarsound;
+    public AudioClip error;
 
     public GameObject ending;
 
@@ -59,6 +64,8 @@ public class Room_GameController : MonoBehaviour {
     int itemCount;
     int pianoCorrectCount;
     int pwCorrectCount;
+    int passcount;
+    public static int password;
 
     float movePosX, prePosX;
 
@@ -66,10 +73,13 @@ public class Room_GameController : MonoBehaviour {
     bool slideState;
     int touchDelay;
 
+    bool openDrawer1;
     bool openDrawer;
     bool openDoor;
+    bool doorkeytukatta;
     bool openWindow;
-    bool openCloset;
+    public static bool openCloset;
+    bool openGlass;
 
     bool windowOnCheck;
     bool preWindowOnCheck;
@@ -97,13 +107,18 @@ public class Room_GameController : MonoBehaviour {
         itemCount = 0;
         pianoCorrectCount = 0;
         pwCorrectCount = 0;
+        passcount = 0;
+        password = 0;
 
         zoomInState = false;
         slideState = false;
         touchDelay = 5;
 
+        openGlass = false;
+        openDrawer1 = false;
         openDrawer = false;
         openDoor = false;
+        doorkeytukatta = false;
         openWindow = false;
         openCloset = false;
 
@@ -172,6 +187,39 @@ public class Room_GameController : MonoBehaviour {
                                 item1.SetActive(true);
                                 itemCount = 1;
                             }
+                            else if (hit.collider.name == "Glassdoor")
+                            {
+                                if (!openGlass)
+                                {
+                                    pianosound.PlayOneShot(openwindow);
+                                    glassdoor.transform.Rotate(0, 0, 90.0f);
+                                    openGlass = true;
+                                }
+                                else
+                                {
+                                    pianosound.PlayOneShot(openwindow);
+                                    glassdoor.transform.Rotate(0, 0, -90.0f);
+                                    openGlass = false;
+                                }
+                            }
+                            else if (hit.collider.name == "Guitar")
+                            {
+                                pianosound.PlayOneShot(guitarsound);
+                            }
+                            else if (hit.collider.name == "Drawer1") {
+                                if (!openDrawer1)
+                                {
+                                    pianosound.PlayOneShot(opendrawer);
+                                    drawer1.transform.Translate(0, 0.5f, 0);
+                                    openDrawer1 = true;
+                                }
+                                else
+                                {
+                                    pianosound.PlayOneShot(opendrawer);
+                                    drawer1.transform.Translate(0, -0.5f, 0);
+                                    openDrawer1 = false;
+                                }
+                            }
                             else if (hit.collider.name == "Drawer2")
                             {
                                 if (!openDrawer)
@@ -189,17 +237,23 @@ public class Room_GameController : MonoBehaviour {
                                         openDrawer = true;
                                         itemCount = 2;
                                     }
-                                    else if (itemCount >= 2){
+                                    else if (itemCount >= 2)
+                                    {
                                         pianosound.PlayOneShot(opendrawer);
                                         drawer2.transform.Translate(0, 0.5f, 0);
                                         openDrawer = true;
                                     }
                                 }
-                                else {
+                                else
+                                {
                                     pianosound.PlayOneShot(opendrawer);
                                     drawer2.transform.Translate(0, -0.5f, 0);
                                     openDrawer = false;
                                 }
+                            }
+                            else if (hit.collider.name == "Drawer3")
+                            {
+                                pianosound.PlayOneShot(locked);
                             }
                             else if (hit.collider.name == "C4")
                             {
@@ -290,13 +344,33 @@ public class Room_GameController : MonoBehaviour {
                                 pianosound.PlayOneShot(b4);
                                 pianoCorrectCount = 0;
                             }
-                            else if (hit.collider.name == "Door" && itemSelection == 3 && !openDoor)
+                            else if (hit.collider.name == "Door")
                             {
-                                pianosound.PlayOneShot(opendoor);
-                                door.transform.Rotate(0, 0, -90.0f);
-                                item3.SetActive(true);
-                                item3_s.SetActive(false);
-                                openDoor = true;
+                                if (!openDoor)
+                                {
+                                    if (itemCount < 3 || (itemCount == 3 && itemSelection != 3)) pianosound.PlayOneShot(locked);
+                                    else if (itemCount == 3 && itemSelection == 3 && !doorkeytukatta)
+                                    {
+                                        pianosound.PlayOneShot(opendoor);
+                                        door.transform.Rotate(0, 0, -90.0f);
+                                        item3.SetActive(true);
+                                        item3_s.SetActive(false);
+                                        openDoor = true;
+                                        doorkeytukatta = true;
+                                    }
+                                    else if (itemCount >= 3 && !openDoor && doorkeytukatta)
+                                    {
+                                        pianosound.PlayOneShot(opendoor);
+                                        door.transform.Rotate(0, 0, -90.0f);
+                                        openDoor = true;
+                                    }
+                                }
+                                else
+                                {
+                                    pianosound.PlayOneShot(opendoor);
+                                    door.transform.Rotate(0, 0, 90.0f);
+                                    openDoor = false;
+                                }
                             }
                             else if (hit.collider.name == "Driver")
                             {
@@ -312,15 +386,26 @@ public class Room_GameController : MonoBehaviour {
                                 item4.SetActive(true);
                                 item4_s.SetActive(false);
                             }
-                            else if (hit.collider.name == "Window" && !openWindow)
+                            else if (hit.collider.name == "Window")
                             {
-                                pianosound.PlayOneShot(openwindow);
-                                window.transform.Rotate(0, 0, -90.0f);
-                                openWindow = true;
+                                if (!openWindow)
+                                {
+                                    pianosound.PlayOneShot(openwindow);
+                                    window.transform.Rotate(0, 0, -90.0f);
+                                    openWindow = true;
+                                }
+                                else
+                                {
+                                    pianosound.PlayOneShot(openwindow);
+                                    window.transform.Rotate(0, 0, 90.0f);
+                                    openWindow = false;
+                                }
                             }
                             else if (hit.collider.name == "num1")
                             {
                                 pianosound.PlayOneShot(numsound);
+                                password = password * 10 + 1;
+                                passcount++;/*
                                 if (pwCorrectCount == 2)
                                 {
                                     pwCorrectCount++;
@@ -328,31 +413,41 @@ public class Room_GameController : MonoBehaviour {
                                 else
                                 {
                                     pwCorrectCount = 0;
-                                }
+                                }*/
                             }
                             else if (hit.collider.name == "num2")
                             {
                                 pianosound.PlayOneShot(numsound);
-                                pwCorrectCount = 0;
+                                password = password * 10 + 2;
+                                passcount++;
+                                //pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num3")
                             {
                                 pianosound.PlayOneShot(numsound);
-                                pwCorrectCount = 0;
+                                password = password * 10 + 3;
+                                passcount++;
+                                //pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num4")
                             {
                                 pianosound.PlayOneShot(numsound);
-                                pwCorrectCount = 0;
+                                password = password * 10 + 4;
+                                passcount++;
+                                //pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num5")
                             {
                                 pianosound.PlayOneShot(numsound);
-                                pwCorrectCount = 0;
+                                password = password * 10 + 5;
+                                passcount++;
+                                //pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num6")
                             {
                                 pianosound.PlayOneShot(numsound);
+                                password = password * 10 + 6;
+                                passcount++;/*
                                 if (pwCorrectCount == 1)
                                 {
                                     pwCorrectCount++;
@@ -360,11 +455,13 @@ public class Room_GameController : MonoBehaviour {
                                 else
                                 {
                                     pwCorrectCount = 0;
-                                }
+                                }*/
                             }
                             else if (hit.collider.name == "num7")
                             {
                                 pianosound.PlayOneShot(numsound);
+                                password = password * 10 + 7;
+                                passcount++;/*
                                 if (pwCorrectCount == 0)
                                 {
                                     pwCorrectCount++;
@@ -372,16 +469,20 @@ public class Room_GameController : MonoBehaviour {
                                 else
                                 {
                                     pwCorrectCount = 0;
-                                }
+                                }*/
                             }
                             else if (hit.collider.name == "num8")
                             {
                                 pianosound.PlayOneShot(numsound);
-                                pwCorrectCount = 0;
+                                password = password * 10 + 8;
+                                passcount++;
+                                //pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num9")
                             {
                                 pianosound.PlayOneShot(numsound);
+                                password = password * 10 + 9;
+                                passcount++;/*
                                 if (pwCorrectCount == 3)
                                 {
                                     pwCorrectCount++;
@@ -389,7 +490,7 @@ public class Room_GameController : MonoBehaviour {
                                 else
                                 {
                                     pwCorrectCount = 0;
-                                }
+                                }*/
                             }
                             else if (hit.collider.name == "Hammer")
                             {
@@ -429,6 +530,26 @@ public class Room_GameController : MonoBehaviour {
             item3.SetActive(true);
             itemCount = 3;
         }
+        if (passcount == 4)
+        {
+            if (password == 7619)
+            {
+                if (!openCloset)
+                {
+                    pianosound.PlayOneShot(framedrop);
+                    door_left.transform.Rotate(0, 0, 90.0f);
+                    door_left.transform.Translate(-1.0f, 1.0f, 0);
+                    door_right.transform.Rotate(0, 0, -90.0f);
+                    openCloset = true;
+                }
+            }
+            else
+            {
+                pianosound.PlayOneShot(error);
+                passcount = 0;
+                password = 0;
+            }
+        }/*
         if (pwCorrectCount == 4 && !openCloset)
         {
             pianosound.PlayOneShot(framedrop);
@@ -436,7 +557,7 @@ public class Room_GameController : MonoBehaviour {
             door_left.transform.Translate(-1.0f, 1.0f, 0);
             door_right.transform.Rotate(0, 0, -90.0f);
             openCloset = true;
-        }
+        }*/
     }
 
     public void Ending()
