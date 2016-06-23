@@ -51,6 +51,7 @@ public class Room_GameController : MonoBehaviour {
     public AudioClip wallbreak;
     public AudioClip openwindow;
     public AudioClip hooray;
+    public AudioClip locked;
 
     public GameObject ending;
 
@@ -171,17 +172,34 @@ public class Room_GameController : MonoBehaviour {
                                 item1.SetActive(true);
                                 itemCount = 1;
                             }
-                            else if (hit.collider.name == "Drawer2" && itemSelection == 1 && !openDrawer)
+                            else if (hit.collider.name == "Drawer2")
                             {
-                                pianosound.PlayOneShot(opendrawer);
-                                drawer2.transform.Translate(0, 0.5f, 0);
-                                paper.SetActive(false);
-                                pianosound.PlayOneShot(getitem);
-                                item2.SetActive(true);
-                                item1.SetActive(true);
-                                item1_s.SetActive(false);
-                                openDrawer = true;
-                                itemCount = 2;
+                                if (!openDrawer)
+                                {
+                                    if (itemCount == 0 || (itemCount == 1 && itemSelection != 1)) pianosound.PlayOneShot(locked);
+                                    else if (itemCount == 1 && itemSelection == 1)
+                                    {
+                                        pianosound.PlayOneShot(opendrawer);
+                                        drawer2.transform.Translate(0, 0.5f, 0);
+                                        paper.SetActive(false);
+                                        pianosound.PlayOneShot(getitem);
+                                        item2.SetActive(true);
+                                        item1.SetActive(true);
+                                        item1_s.SetActive(false);
+                                        openDrawer = true;
+                                        itemCount = 2;
+                                    }
+                                    else if (itemCount >= 2){
+                                        pianosound.PlayOneShot(opendrawer);
+                                        drawer2.transform.Translate(0, 0.5f, 0);
+                                        openDrawer = true;
+                                    }
+                                }
+                                else {
+                                    pianosound.PlayOneShot(opendrawer);
+                                    drawer2.transform.Translate(0, -0.5f, 0);
+                                    openDrawer = false;
+                                }
                             }
                             else if (hit.collider.name == "C4")
                             {
