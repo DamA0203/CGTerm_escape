@@ -30,6 +30,28 @@ public class Room_GameController : MonoBehaviour {
     public GameObject item5;
     public GameObject item5_s;
 
+    private AudioSource pianosound;
+    public AudioClip c4;
+    public AudioClip cc4;
+    public AudioClip d4;
+    public AudioClip dd4;
+    public AudioClip e4;
+    public AudioClip f4;
+    public AudioClip ff4;
+    public AudioClip g4;
+    public AudioClip gg4;
+    public AudioClip a4;
+    public AudioClip aa4;
+    public AudioClip b4;
+    public AudioClip getitem;
+    public AudioClip numsound;
+    public AudioClip opendrawer;
+    public AudioClip opendoor;
+    public AudioClip framedrop;
+    public AudioClip wallbreak;
+    public AudioClip openwindow;
+    public AudioClip hooray;
+
     public GameObject ending;
 
     int itemSelection;
@@ -89,6 +111,8 @@ public class Room_GameController : MonoBehaviour {
 
         halfWidth = Screen.width * 0.5f;
         halfHeight = Screen.height * 0.5f;
+
+        pianosound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -142,14 +166,17 @@ public class Room_GameController : MonoBehaviour {
 
                             if (hit.collider.name == "Key1")
                             {
+                                pianosound.PlayOneShot(getitem);
                                 key1.SetActive(false);
                                 item1.SetActive(true);
                                 itemCount = 1;
                             }
                             else if (hit.collider.name == "Drawer2" && itemSelection == 1 && !openDrawer)
                             {
+                                pianosound.PlayOneShot(opendrawer);
                                 drawer2.transform.Translate(0, 0.5f, 0);
                                 paper.SetActive(false);
+                                pianosound.PlayOneShot(getitem);
                                 item2.SetActive(true);
                                 item1.SetActive(true);
                                 item1_s.SetActive(false);
@@ -158,6 +185,7 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "C4")
                             {
+                                pianosound.PlayOneShot(c4);
                                 if (pianoCorrectCount == 0 || pianoCorrectCount == 3)
                                 {
                                     pianoCorrectCount++;
@@ -170,18 +198,22 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "C#4")
                             {
+                                pianosound.PlayOneShot(cc4);
                                 pianoCorrectCount = 0;
                             }
                             else if (hit.collider.name == "D4")
                             {
+                                pianosound.PlayOneShot(d4);
                                 pianoCorrectCount = 0;
                             }
                             else if (hit.collider.name == "D#4")
                             {
+                                pianosound.PlayOneShot(dd4);
                                 pianoCorrectCount = 0;
                             }
                             else if (hit.collider.name == "E4")
                             {
+                                pianosound.PlayOneShot(e4);
                                 if (pianoCorrectCount == 4 || pianoCorrectCount == 5)
                                 {
                                     pianoCorrectCount++;
@@ -193,6 +225,7 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "F4")
                             {
+                                pianosound.PlayOneShot(f4);
                                 if (pianoCorrectCount == 2 || pianoCorrectCount == 6)
                                 {
                                     pianoCorrectCount++;
@@ -204,10 +237,12 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "F#4")
                             {
+                                pianosound.PlayOneShot(ff4);
                                 pianoCorrectCount = 0;
                             }
                             else if (hit.collider.name == "G4")
                             {
+                                pianosound.PlayOneShot(g4);
                                 if (pianoCorrectCount == 1)
                                 {
                                     pianoCorrectCount++;
@@ -219,22 +254,27 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "G#4")
                             {
+                                pianosound.PlayOneShot(gg4);
                                 pianoCorrectCount = 0;
                             }
                             else if (hit.collider.name == "A4")
                             {
+                                pianosound.PlayOneShot(a4);
                                 pianoCorrectCount = 0;
                             }
                             else if (hit.collider.name == "A#4")
                             {
+                                pianosound.PlayOneShot(aa4);
                                 pianoCorrectCount = 0;
                             }
                             else if (hit.collider.name == "B4")
                             {
+                                pianosound.PlayOneShot(b4);
                                 pianoCorrectCount = 0;
                             }
                             else if (hit.collider.name == "Door" && itemSelection == 3 && !openDoor)
                             {
+                                pianosound.PlayOneShot(opendoor);
                                 door.transform.Rotate(0, 0, -90.0f);
                                 item3.SetActive(true);
                                 item3_s.SetActive(false);
@@ -242,23 +282,27 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "Driver")
                             {
+                                pianosound.PlayOneShot(getitem);
                                 driver.SetActive(false);
                                 item4.SetActive(true);
                                 itemCount = 4;
                             }
                             else if (hit.collider.name == "Picture_frame" && itemSelection == 4)
                             {
+                                pianosound.PlayOneShot(framedrop);
                                 picture_frame.SetActive(false);
                                 item4.SetActive(true);
                                 item4_s.SetActive(false);
                             }
                             else if (hit.collider.name == "Window" && !openWindow)
                             {
+                                pianosound.PlayOneShot(openwindow);
                                 window.transform.Rotate(0, 0, -90.0f);
                                 openWindow = true;
                             }
                             else if (hit.collider.name == "num1")
                             {
+                                pianosound.PlayOneShot(numsound);
                                 if (pwCorrectCount == 2)
                                 {
                                     pwCorrectCount++;
@@ -270,22 +314,27 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "num2")
                             {
+                                pianosound.PlayOneShot(numsound);
                                 pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num3")
                             {
+                                pianosound.PlayOneShot(numsound);
                                 pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num4")
                             {
+                                pianosound.PlayOneShot(numsound);
                                 pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num5")
                             {
+                                pianosound.PlayOneShot(numsound);
                                 pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num6")
                             {
+                                pianosound.PlayOneShot(numsound);
                                 if (pwCorrectCount == 1)
                                 {
                                     pwCorrectCount++;
@@ -297,6 +346,7 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "num7")
                             {
+                                pianosound.PlayOneShot(numsound);
                                 if (pwCorrectCount == 0)
                                 {
                                     pwCorrectCount++;
@@ -308,10 +358,12 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "num8")
                             {
+                                pianosound.PlayOneShot(numsound);
                                 pwCorrectCount = 0;
                             }
                             else if (hit.collider.name == "num9")
                             {
+                                pianosound.PlayOneShot(numsound);
                                 if (pwCorrectCount == 3)
                                 {
                                     pwCorrectCount++;
@@ -323,14 +375,17 @@ public class Room_GameController : MonoBehaviour {
                             }
                             else if (hit.collider.name == "Hammer")
                             {
+                                pianosound.PlayOneShot(getitem);
                                 hammer.SetActive(false);
                                 item5.SetActive(true);
                                 itemCount = 5;
                             }
                             else if (hit.collider.name == "Wall_fake1" && itemSelection == 5)
                             {
+                                pianosound.PlayOneShot(wallbreak);
                                 Debug.Log("Game End");
                                 ending.SetActive(true);
+                                pianosound.PlayOneShot(hooray);
                             }
 
                             else
@@ -352,11 +407,13 @@ public class Room_GameController : MonoBehaviour {
 
         if (pianoCorrectCount == 7)
         {
+            if(itemCount != 3) pianosound.PlayOneShot(getitem);
             item3.SetActive(true);
             itemCount = 3;
         }
         if (pwCorrectCount == 4 && !openCloset)
         {
+            pianosound.PlayOneShot(framedrop);
             door_left.transform.Rotate(0, 0, 90.0f);
             door_left.transform.Translate(-1.0f, 1.0f, 0);
             door_right.transform.Rotate(0, 0, -90.0f);
